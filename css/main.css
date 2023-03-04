@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: none;
+}
+
+@font-face {    
+    font-family: "HighSpirited";
+    src: url(../fonts/High\ Spirited.ttf);
+}
+
+@font-face {
+    font-family: "CenturyGothic";
+    src: url(../fonts/Century\ Gothic\ Normal.TTF);
+}
+
+header {
+    background-color: #231942;
+    width: 100%;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+   
+    text-decoration: none;
+    font-size: 22px;
+    font-family: sans-serif;
+    font-weight:bolder;
+    list-style-type: none;
+    padding: 1rem;  
+    gap: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center; 
+}
+
+/* .menu_item {
+    padding: 15px;
+    font-family: sans-serif;
+    font-weight:bolder;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+} */
+
+
+.links {
+        text-decoration: none;
+        font-size: 22px;
+        color: #9f86c0;
+}
+.inicio {
+        text-decoration: underline double;
+}
+
+.logo {
+    width: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-items: flex-start;
+    align-items: flex-start;
+}
+
+.seccion1 {
+    background-image: url(../images/fondo1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divtext_titulo {
+    font-family: HighSpirited;
+    background-color: rgba(0, 0, 0, 0.411);
+    color: white;
+    font-size: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+}
+
+
+
+.seccion2 {
+    padding: 40px;
+    display: flex;
+    background-color: #e0b1cb;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+
+}
+
+.seccion3    {
+    background-image: url(../images/contacto.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjetas {
+    width: 100vh;
+    height: 525px;
+    background-color: #be95c4;
+    border-radius: 5px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+
+.card_image {
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 75%;
+}
+
+.card_tittle {
+    font-family: HighSpirited;
+    font-size: 40px;
+    text-decoration: underline;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_text {
+    font-family: CenturyGothic;
+    line-height: 0.9;
+    text-align: center;
+
+}
+
+.imgcontacto {
+    background-position: center;
+    height: 100vh;
+}
+
+.formulario {
+    background-color: #9f86c0;
+    height: 50%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario_inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer {
+    background-color:#231942;
+    color: white;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
