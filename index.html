@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>regufiolunar.cl | Un lugar para sanar</title>
     <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
     <nav>
       <img class="logo" src="./images/logo.png" />
       <ul class="menu">
-        <li class="inicio"><a class="links" href="index.html">INICIO</a></li>
+        <li><a class="inicio" href="index.html">INICIO</a></li>
         <li><a class="links" href="./pages/quiensoy.html">SOBRE MÍ</a></li>
         <li><a class="links" href="./pages/terapias.html">TERAPIAS</a></li>
         <li><a class="links" href="./pages/agenda.html">AGENDA</a></li>
@@ -20,43 +21,82 @@
       </ul>
     </nav>
     <main>
-      <div class="seccion1">
-          <h1 class="divtext_titulo">Refugio Lunar - Un lugar para sanar</h1>
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./images/fondo1.jpeg" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/fondo2.jpeg" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/fondo3.jpeg" class="d-block w-100">
+          </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
+
       <section class="seccion2">
-        <div class="tarjetas">
-          <img class="card_image" src="./images/astral.webp" alt="Carta-astral">
-          <h2 class="card_tittle">Carta astral</h2>
-          <p class="card_text">Lorem, ipsum dolor sit am  et consectetur adipisicing elit. Nemo nulla ullam recurs</p>
-          <a href="./pages/terapias.html">Más información</a>
+
+        <div class="row row-cols-1 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card">
+              <img src="./images/tarot.jpeg" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Tarot</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="./images/alineaciondechakras.jpeg" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Alineacion de Chakras</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="./images/Carta-Astral.jpeg" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Carta astral</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="tarjetas">
-          <img class="card_image" src="./images/chakras.webp" alt="Alineacion-chakras">
-          <h2 class="card_tittle"> Alineación de Chakras</h2>
-          <p class="card_text">Lorem, ipsum dolor sit am  et consectetur adipisicing elit. Nemo nulla ullam recurs</p>
-          <a href="./pages/terapias.html">Más información</a>
-        </div>
-        <div class="tarjetas">
-          <img class="card_image" src="./images/tarot.webp" alt="Tarot">
-          <h2 class="card_tittle">Tarot</h2>
-          <p class="card_text">Lorem, ipsum dolor sit am  et consectetur adipisicing elit. Nemo nulla ullam recurs</p>
-          <a href="./pages/terapias.html">Más información</a>
-        </div>
-        <div class="tarjetas">
-          <img class="card_image" src="./images/cfamiliar.webp" alt="Constelacion-familiar">
-          <h2 class="card_tittle">Constelación Familiar</h2>
-          <p class="card_text">Lorem, ipsum dolor sit am  et consectetur adipisicing elit. Nemo nulla ullam recurs</p>
-          <a class="linkinfo" href="./pages/terapias.html">Más información</a>
-        </div>
-        
-      </section>
+            </section>
     </main>
     <footer>
       <img class="logo" src="./images/logo.png" />
+      <div>
+        <h3>Contacto</h3>
+        <li>Instagram</li>
+        <li>Facebook</li>
+        <li>Correo</li>
+      </div>
+      <div>
+        <h3>Terapias</h3>
+        <li>Alineación de chakras</li>
+        <li>Carta Astral</li>
+        <li>Constelaciones Familiares</li>
+        <li>Tarot</li>
+      </div>      
       <p class="derechos">
         @CopyRight - Todos los derechos reservados a Refugio Lunar
       </p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
   </body>
 </html>

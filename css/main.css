@@ -14,12 +14,11 @@
     src: url(../fonts/Century\ Gothic\ Normal.TTF);
 }
 
+
 nav {
-    background-color: #231942;
+    background-color: #eacaff;
     width: 100%;
-    padding: 5px;
     position: sticky;
-    top: 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -27,48 +26,47 @@ nav {
     align-items: center;
 }
 
-.menu {
-   
+.menu {   
     text-decoration: none;
-    font-size: 22px;
     font-family: sans-serif;
     font-weight:bolder;
     list-style-type: none;
-    padding: 1rem;  
-    gap: 25px;
+    padding: 10px;  
+    gap: 20px;
     display: flex;
     flex-direction: row;
     justify-content: end;
     align-items: center; 
 }
 
-/* .menu_item {
-    padding: 15px;
-    font-family: sans-serif;
-    font-weight:bolder;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-} */
-
-
 .links {
+        font-family: CenturyGothic;
         text-decoration: none;
-        font-size: 22px;
-        color: #9f86c0;
+        font-size: 20px;
+        color: #ffffff;
 }
+
 .inicio {
-        text-decoration: underline double;
-}
+        font-family: CenturyGothic;
+        text-decoration: none;
+        font-size: 24px;
+        color: #ce75b3;
+
+    }
 
 .logo {
-    width: 80px;
+    width: 55px;
     display: flex;
     flex-direction: row;
     justify-items: flex-start;
     align-items: flex-start;
 }
 
+.main{
+    width: auto;
+    max-height: fit-content;
+}
+/* 
 .seccion1 {
     background-image: url(../images/fondo1.jpeg);
     background-repeat: no-repeat;
@@ -78,7 +76,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
 .divtext_titulo {
     font-family: HighSpirited;
@@ -96,11 +94,11 @@ nav {
 .seccion2 {
     padding: 40px;
     display: flex;
-    background-color: #e0b1cb;
+    background-color: #ffffff;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 90px;
+    gap: 90px;  
 
 }
 
@@ -115,17 +113,20 @@ nav {
     align-items: center;
 }
 
-.tarjetas {
-    width: 100vh;
-    height: 525px;
-    background-color: #be95c4;
+.card {
+    background-color: #eacaff;
+}
+
+/* .tarjetas {
+    width: 100%;
+    background-color: #eacaff;
     border-radius: 5px;
     padding: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-} 
+}  */
 
 .card_image {
     border-radius: 5px;
@@ -137,9 +138,9 @@ nav {
     height: 75%;
 }
 
-.card_tittle {
+.card-title {
     font-family: HighSpirited;
-    font-size: 40px;
+    font-size: 64px;
     text-decoration: underline;
     color: whitesmoke;
     display: flex;
@@ -148,7 +149,7 @@ nav {
     align-items: center;
 }
 
-.card_text {
+.card-text {
     font-family: CenturyGothic;
     line-height: 0.9;
     text-align: center;
@@ -177,10 +178,63 @@ nav {
     align-items: center;
 }
 footer {
-    background-color:#231942;
+    background-color:#eacaff;
     color: white;
     padding: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
+.grid1 {
+    width: 100%;
+    height: 50vh;
+
+    display: grid;
+    grid-template-columns: repeat(4 1fr) ;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+    "img1 img2 titulo titulo"
+    "img1 img2 parrafo parrafo"
+    "img1 img2 parrafo parrafo"
+    "img1 img2 parrafo parrafo";
+}
+.grid1__img1 {
+    grid-area: img1;
+}
+.grid1__img2{
+       grid-area: img2;
+}
+.grid1__titulo{
+    grid-area: titulo;
+}
+.grid1__parrafo{
+    grid-area: parrafo;
+}
+
+.grid2 {
+    width: 100%;
+    height: 50vh;
+
+    display: grid;
+    grid-template-columns: repeat(4 1fr) ;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+    "titulo1 titulo1 imge1 imge2"
+    "parrafo1 parrafo1 imge1 imge2"
+    "parrafo1 parrafo1 imge1 imge2"
+    "parrafo1 parrafo1 imge1 imge2";
+}
+.grid2__img1 {
+    grid-area: imge1;
+}
+.grid2__img2{
+       grid-area: imge2;
+}
+.grid2__titulo{
+    grid-area: titulo1;
+}
+.grid2__parrafo{
+    grid-area: parrafo1;
+}
+
