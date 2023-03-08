@@ -25,6 +25,8 @@ nav {
     align-items: center;
 }
 
+
+
 .menu {   
     text-decoration: none;
     font-family: sans-serif;
@@ -39,11 +41,47 @@ nav {
 }
 
 .links {
-        font-family: CenturyGothic;
-        text-decoration: none;
-        font-size: 20px;
-        color: #ffffff;
+    font-family: CenturyGothic;
+    text-decoration: none;
+    font-size: 20px;
+    color: #ffffff;
 }
+
+.translate {
+    transition: 500ms;
+}
+
+.translate:hover {
+    transform: translateY(-5px);
+    filter: brightness(1)
+}
+
+.rotate-vert-center {
+	-webkit-animation: rotate-vert-center 5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+	        animation: rotate-vert-center 5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+
+ @-webkit-keyframes rotate-vert-center {
+    0% {
+      -webkit-transform: rotateY(0);
+              transform: rotateY(0);
+    }
+    100% {
+      -webkit-transform: rotateY(360deg);
+              transform: rotateY(360deg);
+    }
+  }
+  @keyframes rotate-vert-center {
+    0% {
+      -webkit-transform: rotateY(0);
+              transform: rotateY(0);
+    }
+    100% {
+      -webkit-transform: rotateY(360deg);
+              transform: rotateY(360deg);
+    }
+  }
+  
 
 .inicio {
         font-family: CenturyGothic;
@@ -244,21 +282,6 @@ footer {
     background-color: #eacaff;
 }
 
-/* .alinear {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.alinear img {
-
-    position: relative;
-    z-index: -1;
-}
-*/
-
-
 .d-item img {
     filter: brightness(0.9)
 }
@@ -279,4 +302,62 @@ footer {
     color: #ffffff75;
     font-size: 30px;
 }
+
+@media screen and (max-width: 768px) {
+    .grid1 {
+        max-height: 200px;
+        max-width: 768px;
+        /* width: 100%; */
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+        "img1 img2"
+        "img1 img2"
+        "titulo titulo"
+        "parrafo parrafo";
+    }
+
+    .grid1__img1 {
+            grid-area: img1;
+    }
+    .grid1__img2{
+               grid-area: img2;
+    }
+    .grid1__titulo{
+        grid-area: titulo;
+        }
+    .grid1__parrafo{
+            grid-area: parrafo;
+        }
+    
+    .grid2 {
+            max-height: 200px;
+            max-width: 768px;
+            /* width: 100%; */
+            display: grid;
+            grid-template-columns: 1fr 1fr ;
+            grid-template-rows: repeat(4, 1fr);
+            grid-template-areas:
+            "img1 img2"
+            "img1 img2"
+            "titulo titulo"
+            "parrafo parrafo";
+        }
+    
+        .grid2__img1 {
+                grid-area: img1;
+        }
+        .grid2__img2{
+                   grid-area: img2;
+        }
+        .grid2__titulo{
+            grid-area: titulo;
+            }
+        .grid2__parrafo{
+                grid-area: parrafo;
+            }
+    
+        
+    }
 
