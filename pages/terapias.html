@@ -12,15 +12,48 @@
   </head>
 
   <body>
-    <nav>
-      <img class="logo rotate-vert-center" src="../images/logo.png" />
-      <ul class="menu">
-        <li class="translate"><a class="inicio" href="../index.html">INICIO</a></li>
-        <li class="translate"><a class="links" href="./quiensoy.html">SOBRE MÍ</a></li>
-        <li class="translate"><a class="links" href="./terapias.html">TERAPIAS</a></li>
-        <li class="translate"><a class="links" href="./agenda.html">AGENDA</a></li>
-        <li class="translate"><a class="links" href="./contacto.html">CONTACTO</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-lg sticky-top navegacion">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"> ❧ Refugio Lunar ☙ </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav menu me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px ">
+            <li class="nav-item translate"><a class="nav-link inicio" aria-current="page" href="../index.html">Inicio</a></li>
+            <li class="nav-item translate"><a class="nav-link links" href="quiensoy.html">Sobre mí</a></li>
+            <li class="nav-item translate dropdown"><a class="nav-link dropdown-toggle links" href="terapias.html" role="button"     data-bs-toggle="dropdown" aria-expanded="false">Terapias</a>
+              <ul class="dropdown-menu">
+                <li class="translate">
+                  <a class="dropdown-item" href="terapias.html">Alineación de chakras</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="terapias.html">Carta astral</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="terapias.html">Constelación familiar</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="terapias.html">Tarot</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="terapias.html">Registros akashicos</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item translate"><a class="nav-link links" href="agenda.html">Agenda</a></li>
+            <li class="nav-item translate"><a class="nav-link links" href="contacto.html">Contacto</a></li>
+          </ul>
+          <img class="logo rotate-vert-center" src="../images/logo.png" />
+         </div>
+      </div>
     </nav>
 
     <main>
