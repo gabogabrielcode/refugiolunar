@@ -179,14 +179,12 @@
     align-items: center;
 }
 
-/* footer {
+footer {
     background-color:#eacaff;
     color: white;
-    padding: 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-} */
+    padding: 5px;
+}
+
 
 .grid1 {
     min-height: 500px;
@@ -284,9 +282,7 @@
     } 
 
     .descripcion {
-        font-family: 'Dancing Script', cursive;
-        color: #ffffff75;
-        font-size: 10px;
+       font-size: 15px;
     }
 
     .boton {
