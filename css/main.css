@@ -164,12 +164,18 @@
 
 .formulario {
     background-color: #9f86c0;
+    box-shadow: 5px 1px 20px;
     height: 50%;
     width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.formulario h2 {
+    font-family: HighSpirited;
+    font-size: 4vw;
 }
 
 .formulario_inputs {
@@ -179,10 +185,112 @@
     align-items: center;
 }
 
+.seccion3 {
+    background-image: url(../images/contacto.jpeg)
+}   
+
+.titulo-agenda {
+    font-family: HighSpirited;
+    font-size: 80px;
+}
+
+
+
 footer {
     background-color:#eacaff;
     color: white;
     padding: 5px;
+}
+
+.tituloagenda{
+    text-align: center;
+    grid-area: titagen;
+}
+
+.tituloagenda h1{
+    font-family: HighSpirited;
+    font-size: 100px;
+    color: rgba(64, 0, 107, 0.74);
+     text-align: center;
+    grid-area: titagen;
+}
+.mes1 {
+    background-color: rgba(217, 188, 255, 0.74);
+    font-family: CenthuryGothics;
+    border-radius: 20px;
+    grid-area: mes1;
+}
+
+.mes2 {
+    background-color: rgba(217, 188, 255, 0.74);
+    font-family: CenthuryGothics;
+    grid-area: mes2;
+}
+
+.mes3 {
+    background-color: rgba(217, 188, 255, 0.74);
+    font-family: CenthuryGothics;
+    grid-area: mes3;
+}
+
+.mes4 {
+    background-color: rgba(217, 188, 255, 0.74);
+    font-family: CenthuryGothics;
+    grid-area: mes4;
+}
+
+.form {
+    grid-area: form;
+}
+.form h2 {
+    font-family: CenthuryGothics;
+    color:#eacaff;
+    background-color: #00000065;
+}
+
+.primerdia-3 {
+    grid-column-start: 3;
+}
+
+.primerdia-4 {
+    grid-column-start: 6;
+}
+
+.primerdia-5 {
+    grid-column-start: 1;
+}
+
+.primerdia-6 {
+    grid-column-start: 4;
+}
+
+.dia {
+    background-color: #9f86c0;
+    font-weight: bold;   
+}
+
+.mesx {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+ }
+
+.grid3 {
+    background-image: url(../images/agenda.jpeg);
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "titagen titagen titagen titagen titagen titagen titagen titagen"
+    "mes1 mes1 mes2 mes2 form form form form"
+    "mes1 mes1 mes2 mes2 form form form form"
+    "mes3 mes3 mes4 mes4 form form form form"
+    "mes3 mes3 mes4 mes4 form form form form"   
+    ;
+    gap: 5px    ;
+    
+    
 }
 
 
@@ -192,7 +300,7 @@ footer {
 
     display: grid;
     grid-template-columns: repeat(4 1fr) ;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     grid-template-areas:
     "img1 img2 titulo titulo"
     "img1 img2 parrafo parrafo"
