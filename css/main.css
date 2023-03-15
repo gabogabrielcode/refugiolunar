@@ -214,32 +214,36 @@ footer {
      text-align: center;
     grid-area: titagen;
 }
-.mes1 {
+
+.month {
     background-color: rgba(217, 188, 255, 0.74);
     font-family: CenthuryGothics;
     border-radius: 20px;
+}
+
+.mes1 {
+ 
     grid-area: mes1;
 }
 
 .mes2 {
-    background-color: rgba(217, 188, 255, 0.74);
-    font-family: CenthuryGothics;
+
     grid-area: mes2;
 }
 
 .mes3 {
-    background-color: rgba(217, 188, 255, 0.74);
-    font-family: CenthuryGothics;
+  
     grid-area: mes3;
 }
 
 .mes4 {
-    background-color: rgba(217, 188, 255, 0.74);
-    font-family: CenthuryGothics;
+   
     grid-area: mes4;
 }
 
+
 .form {
+    background-color: #9f86c06c;
     grid-area: form;
 }
 .form h2 {
@@ -277,6 +281,8 @@ footer {
 
 .grid3 {
     background-image: url(../images/agenda.jpeg);
+    justify-content: center;
+    align-items: center;
     text-align: center;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
@@ -288,7 +294,8 @@ footer {
     "mes3 mes3 mes4 mes4 form form form form"
     "mes3 mes3 mes4 mes4 form form form form"   
     ;
-    gap: 5px    ;
+    gap: 5px;
+    padding: 0;
     
     
 }
@@ -438,6 +445,18 @@ footer {
                 grid-area: parrafo;
             }
     
-        
+    .grid3 {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        grid-template-areas: 
+        "titagen titagen titagen titagen"
+        "mes1 mes1 mes1 mes1"
+        "mes2 mes2 mes2 mes2"
+        "mes3 mes3 mes3 mes3 "
+        "mes4 mes4 mes4 mes4"
+        "form form form form"
+        "form form form form";
+    }
     }
 
