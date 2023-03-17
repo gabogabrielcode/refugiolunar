@@ -245,7 +245,7 @@
   
   <div class="form">
     <h2>Ingresa tus datos para agendar</h2>
-    <form class="row g-3">
+    <form class="row g-3 justify-content-center">
       <div class="row g-3">
         <div class="col">
           <input type="text" class="form-control" placeholder="Ingresar nombre:" aria-label="First name">
@@ -254,7 +254,7 @@
           <input type="text" class="form-control" placeholder="Ingresar apellido:" aria-label="Last name">
         </div>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-5">
         <label for="inputEmail4" class="form-label"></label>
         <input type="email" class="form-control" id="inputEmail4" placeholder="Ingresar email:">
       </div>
@@ -263,8 +263,18 @@
         <label for="inputAddress" class="form-label"></label>
         <input type="text" class="form-control" id="inputAddress" placeholder="Ingresar dirección:">
       </div>
+
+      <div class="col-md-4">
+        <label for="inputState" class="form-label" aria-placeholder="Selecciona mes">Terapia</label>
+        <select id="inputState" class="form-select">
+          <option>Alineación de chakras</option>
+          <option>Carta astral</option>
+          <option>Constelación familiar</option>
+          <option>Lectura de tarot</option>
+        </select>
+      </div>
   
-      <div class="col-md-6">
+      <div class="col-md-3">
         <label for="inputState" class="form-label" aria-placeholder="Selecciona mes">Mes</label>
         <select id="inputState" class="form-select">
           <option>Enero</option>
@@ -282,7 +292,7 @@
         </select>
       </div>
 
-      <div class="col-md-6">
+      <div class="col-md-3">
         <label for="inputState" class="form-label">Día</label>
         <select id="inputState" class="form-select">
           <option>1</option>

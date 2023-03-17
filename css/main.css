@@ -189,13 +189,6 @@
     background-image: url(../images/contacto.jpeg)
 }   
 
-.titulo-agenda {
-    font-family: HighSpirited;
-    font-size: 80px;
-}
-
-
-
 footer {
     background-color:#eacaff;
     color: white;
@@ -211,18 +204,17 @@ footer {
     font-family: HighSpirited;
     font-size: 100px;
     color: rgba(64, 0, 107, 0.74);
-     text-align: center;
+    text-align: center;
     grid-area: titagen;
 }
 
 .month {
     background-color: rgba(217, 188, 255, 0.74);
-    font-family: CenthuryGothics;
+    font-family: CenturyGothic;
     border-radius: 20px;
 }
 
 .mes1 {
- 
     grid-area: mes1;
 }
 
@@ -247,7 +239,7 @@ footer {
     grid-area: form;
 }
 .form h2 {
-    font-family: CenthuryGothics;
+    font-family: CenturyGothic;
     color:#eacaff;
     background-color: #00000065;
 }
@@ -277,6 +269,7 @@ footer {
     list-style-type: none;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
+    align-items: center;
  }
 
 .grid3 {
@@ -381,6 +374,45 @@ footer {
     font-size: 30px;
 }
 
+.grid4__img {
+    width: 100%;
+    grid-area: imagen;
+}
+
+.grid4__titulo{
+    font-family: HighSpirited;
+    font-size: 500px;
+    grid: titulo;
+}
+.grid4__titulo h1{
+    font-family: HighSpirited;
+    font-size: 120px;
+}
+.grid4__texto1 {
+    background-color: blue;
+    width: 100%;
+    grid-area: text1;
+}
+
+.grid4__texto2 {
+    background-color: purple;
+    width: 100%;
+    grid-area: text2;
+}
+
+.grid4 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: 
+    "imagen titulo titulo"
+    "imagen text1 text1"
+    "imagen text1 text1"
+    "imagen text2 text2"
+    "imagen text2 text2"
+    ;  
+}
+
 @media screen and (max-width: 768px) {
     .subtitulo {
         display: flex;
@@ -458,5 +490,23 @@ footer {
         "form form form form"
         "form form form form";
     }
+
+    .grid4 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        grid-template-areas: 
+        "titulo titulo"
+        "imagen imagen"
+        "imagen imagen"
+        "imagen imagen"
+        "text1 text1"
+        "text1 text1"
+        "text2 text2"
+        "text2 text2"
+                ;
+
+    }
+
     }
 
