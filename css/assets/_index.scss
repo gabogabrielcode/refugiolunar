@@ -1,0 +1,61 @@
+main {
+    width: auto;
+    max-height: fit-content;
+
+    .carrusel {
+        .subtitulo {
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            margin: 7px 0;
+            font-size: 80px;
+            font-weight: 500;
+            text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.7);
+            font-family: 'Dancing Script', cursive;
+            margin-top: 0;
+
+            &:hover {
+                transition: 1.5s;
+                transform: translateY(-5px);
+                color: #c090ff;
+            }
+        }
+
+        .descripcion {
+            font-family: 'Dancing Script', cursive;
+            color: #ffffff75;
+            font-size: 30px;
+        }
+    }
+
+    .seccion2 {
+        padding: 40px;
+        display: flex;
+        background-color: #ffffff;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 90px;
+
+        .card {
+            background-color: #eacaff;
+
+            &__title {
+                font-family: HighSpirited;
+                font-size: 64px;
+                text-decoration: underline;
+                color: whitesmoke;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+
+            &__text {
+                font-family: CenturyGothic;
+                line-height: 0.9;
+                text-align: center;
+            }
+        }
+    }
+}

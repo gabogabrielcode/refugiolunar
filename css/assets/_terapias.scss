@@ -1,0 +1,59 @@
+.grid1 {
+    min-height: 500px;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(4 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas:
+        "img1 img2 titulo titulo"
+        "img1 img2 parrafo parrafo"
+        "img1 img2 parrafo parrafo"
+        "img1 img2 parrafo parrafo";
+
+    .grid1__img1 {
+        grid-area: img1;
+    }
+
+    .grid1__img2 {
+        grid-area: img2;
+    }
+
+    .grid1__titulo {
+        grid-area: titulo;
+    }
+
+    .grid1__parrafo {
+        grid-area: parrafo;
+    }
+}
+
+.grid2 {
+    width: 100%;
+    min-height: 500px;
+    display: grid;
+    grid-template-columns: repeat(4 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+        "titulo1 titulo1 imge1 imge2"
+        "parrafo1 parrafo1 imge1 imge2"
+        "parrafo1 parrafo1 imge1 imge2"
+        "parrafo1 parrafo1 imge1 imge2";
+    column-gap: 4px;
+
+    .grid2__img1 {
+        grid-area: imge1;
+    }
+
+    .grid2__img2 {
+        grid-area: imge2;
+    }
+
+    .grid2__titulo {
+        grid-area: titulo1;
+    }
+
+    .grid2__parrafo {
+        grid-area: parrafo1;
+    }
+}

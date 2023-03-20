@@ -1,0 +1,149 @@
+.grid3 {
+    background-image: url(../images/agenda.jpeg);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+        "titagen titagen titagen titagen titagen titagen titagen titagen"
+        "mes1 mes1 mes2 mes2 form form form form"
+        "mes1 mes1 mes2 mes2 form form form form"
+        "mes3 mes3 mes4 mes4 form form form form"
+        "mes3 mes3 mes4 mes4 form form form form"
+    ;
+    gap: 5px;
+    padding: 0;
+
+    .tituloagenda {
+        text-align: center;
+        grid-area: titagen;
+
+        &__h1 {
+            font-family: HighSpirited;
+            font-size: 6rem;
+            color: rgba(64, 0, 107, 0.74);
+        }
+    }
+
+    .mes1 {
+        grid-area: mes1;
+
+        .month {
+            background-color: rgba(217, 188, 255, 0.74);
+            font-family: CenturyGothic;
+            border-radius: 20px;
+        }
+
+        .mesx {
+            list-style-type: none;
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            align-items: center;
+
+            .dia{
+                background-color: #9f86c0;
+                font-weight: bold;      
+            }
+
+            .primerdia3 {
+                grid-column-start: 3;
+            }
+        }
+
+    }
+
+    .mes2 {
+        grid-area: mes2;
+
+        .month {
+            background-color: rgba(217, 188, 255, 0.74);
+            font-family: CenturyGothic;
+            border-radius: 20px;
+        }
+
+        .mesx {
+            list-style-type: none;
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            align-items: center;
+
+            .dia{
+                background-color: #9f86c0;
+                font-weight: bold;      
+            }
+
+            .primerdia3 {
+                grid-column-start: 6;
+            }
+        }
+
+    }
+
+    .mes3 {
+        grid-area: mes3;
+
+        .month {
+            background-color: rgba(217, 188, 255, 0.74);
+            font-family: CenturyGothic;
+            border-radius: 20px;
+        }
+
+        .mesx {
+            list-style-type: none;
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            align-items: center;
+
+            .dia{
+                background-color: #9f86c0;
+                font-weight: bold;      
+            }
+
+            .primerdia3 {
+                grid-column-start: 1;
+            }
+        }
+
+    }
+
+    .mes4 {
+        grid-area: mes4;
+
+        .month {
+            background-color: rgba(217, 188, 255, 0.74);
+            font-family: CenturyGothic;
+            border-radius: 20px;
+        }
+
+        .mesx {
+            list-style-type: none;
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            align-items: center;
+
+            .dia{
+                background-color: #9f86c0;
+                font-weight: bold;      
+            }
+
+            .primerdia3 {
+                grid-column-start: 4;
+            }
+        }
+
+    }
+
+    .form {
+        background-color: #9f86c06c;
+        grid-area: form;
+        font-family: CenturyGothic;
+        color:#eacaff;
+        background-color: #00000065;
+    }
+   
+
+
+
+}

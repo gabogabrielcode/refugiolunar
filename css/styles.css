@@ -36,7 +36,7 @@
   transition: 500ms;
 }
 .navegacion .menu .translate:hover {
-  transform: translateY(-5px);
+  transform: translateY(-3px);
   color: #5f2da1;
   font-weight: bold;
   filter: brightness(1);
@@ -74,6 +74,245 @@ footer .translate:hover {
   color: #5f2da1;
   font-weight: bold;
   filter: brightness(1);
+}
+
+main {
+  width: auto;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+}
+main .carrusel .subtitulo {
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin: 7px 0;
+  font-size: 80px;
+  font-weight: 500;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.7);
+  font-family: "Dancing Script", cursive;
+  margin-top: 0;
+}
+main .carrusel .subtitulo:hover {
+  transition: 1.5s;
+  transform: translateY(-5px);
+  color: #c090ff;
+}
+main .carrusel .descripcion {
+  font-family: "Dancing Script", cursive;
+  color: rgba(255, 255, 255, 0.4588235294);
+  font-size: 30px;
+}
+main .seccion2 {
+  padding: 40px;
+  display: flex;
+  background-color: #ffffff;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 90px;
+}
+main .seccion2 .card {
+  background-color: #eacaff;
+}
+main .seccion2 .card__title {
+  font-family: HighSpirited;
+  font-size: 64px;
+  text-decoration: underline;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+main .seccion2 .card__text {
+  font-family: CenturyGothic;
+  line-height: 0.9;
+  text-align: center;
+}
+
+.grid4 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas: "imagen titulo1 titulo1" "imagen text1 text1" "imagen text1 text1" "imagen text2 text2" "imagen text2 text2";
+}
+.grid4 .grid4__img {
+  display: cover;
+  grid-area: imagen;
+}
+.grid4 .grid4__titulo {
+  font-family: HighSpirited;
+  grid: titulo1;
+}
+.grid4 .grid4__titulo h1 {
+  font-size: 120px;
+}
+.grid4 .grid4__texto1 {
+  background-color: blue;
+  width: 100%;
+  grid-area: text1;
+}
+.grid4 .grid4__texto2 {
+  background-color: purple;
+  width: 100%;
+  grid-area: text2;
+}
+
+.grid1 {
+  min-height: 500px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas: "img1 img2 titulo titulo" "img1 img2 parrafo parrafo" "img1 img2 parrafo parrafo" "img1 img2 parrafo parrafo";
+}
+.grid1 .grid1__img1 {
+  grid-area: img1;
+}
+.grid1 .grid1__img2 {
+  grid-area: img2;
+}
+.grid1 .grid1__titulo {
+  grid-area: titulo;
+}
+.grid1 .grid1__parrafo {
+  grid-area: parrafo;
+}
+
+.grid2 {
+  width: 100%;
+  min-height: 500px;
+  display: grid;
+  grid-template-columns: repeat(4 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas: "titulo1 titulo1 imge1 imge2" "parrafo1 parrafo1 imge1 imge2" "parrafo1 parrafo1 imge1 imge2" "parrafo1 parrafo1 imge1 imge2";
+  -moz-column-gap: 4px;
+       column-gap: 4px;
+}
+.grid2 .grid2__img1 {
+  grid-area: imge1;
+}
+.grid2 .grid2__img2 {
+  grid-area: imge2;
+}
+.grid2 .grid2__titulo {
+  grid-area: titulo1;
+}
+.grid2 .grid2__parrafo {
+  grid-area: parrafo1;
+}
+
+.grid3 {
+  background-image: url(../images/agenda.jpeg);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "titagen titagen titagen titagen titagen titagen titagen titagen" "mes1 mes1 mes2 mes2 form form form form" "mes1 mes1 mes2 mes2 form form form form" "mes3 mes3 mes4 mes4 form form form form" "mes3 mes3 mes4 mes4 form form form form";
+  gap: 5px;
+  padding: 0;
+}
+.grid3 .tituloagenda {
+  text-align: center;
+  grid-area: titagen;
+}
+.grid3 .tituloagenda__h1 {
+  font-family: HighSpirited;
+  font-size: 6rem;
+  color: rgba(64, 0, 107, 0.74);
+}
+.grid3 .mes1 {
+  grid-area: mes1;
+}
+.grid3 .mes1 .month {
+  background-color: rgba(217, 188, 255, 0.74);
+  font-family: CenturyGothic;
+  border-radius: 20px;
+}
+.grid3 .mes1 .mesx {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  align-items: center;
+}
+.grid3 .mes1 .mesx .dia {
+  background-color: #9f86c0;
+  font-weight: bold;
+}
+.grid3 .mes1 .mesx .primerdia3 {
+  grid-column-start: 3;
+}
+.grid3 .mes2 {
+  grid-area: mes2;
+}
+.grid3 .mes2 .month {
+  background-color: rgba(217, 188, 255, 0.74);
+  font-family: CenturyGothic;
+  border-radius: 20px;
+}
+.grid3 .mes2 .mesx {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  align-items: center;
+}
+.grid3 .mes2 .mesx .dia {
+  background-color: #9f86c0;
+  font-weight: bold;
+}
+.grid3 .mes2 .mesx .primerdia3 {
+  grid-column-start: 6;
+}
+.grid3 .mes3 {
+  grid-area: mes3;
+}
+.grid3 .mes3 .month {
+  background-color: rgba(217, 188, 255, 0.74);
+  font-family: CenturyGothic;
+  border-radius: 20px;
+}
+.grid3 .mes3 .mesx {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  align-items: center;
+}
+.grid3 .mes3 .mesx .dia {
+  background-color: #9f86c0;
+  font-weight: bold;
+}
+.grid3 .mes3 .mesx .primerdia3 {
+  grid-column-start: 1;
+}
+.grid3 .mes4 {
+  grid-area: mes4;
+}
+.grid3 .mes4 .month {
+  background-color: rgba(217, 188, 255, 0.74);
+  font-family: CenturyGothic;
+  border-radius: 20px;
+}
+.grid3 .mes4 .mesx {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  align-items: center;
+}
+.grid3 .mes4 .mesx .dia {
+  background-color: #9f86c0;
+  font-weight: bold;
+}
+.grid3 .mes4 .mesx .primerdia3 {
+  grid-column-start: 4;
+}
+.grid3 .form {
+  background-color: rgba(159, 134, 192, 0.4235294118);
+  grid-area: form;
+  font-family: CenturyGothic;
+  color: #eacaff;
+  background-color: rgba(0, 0, 0, 0.3960784314);
 }
 @keyframes RotateIn {
   0% {

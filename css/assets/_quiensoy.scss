@@ -1,0 +1,38 @@
+.grid4 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas:
+        "imagen titulo1 titulo1"
+        "imagen text1 text1"
+        "imagen text1 text1"
+        "imagen text2 text2"
+        "imagen text2 text2"
+    ;
+
+    .grid4__img {
+        display: cover;
+        grid-area: imagen;
+    }
+
+    .grid4__titulo {
+        font-family: HighSpirited;
+        grid: titulo1;
+        
+        h1{
+            font-size: 120px;
+        }
+    }
+
+    .grid4__texto1 {
+        background-color: blue;
+        width: 100%;
+        grid-area: text1;
+    }
+
+    .grid4__texto2 {
+        background-color: purple;
+        width: 100%;
+        grid-area: text2;
+    }
+}
