@@ -1,0 +1,15 @@
+footer {
+    background-color: #eacaff;
+    padding: 0.5rem;
+
+    .translate {
+        transition: 500ms;
+
+        &:hover {
+            transform: translateY(-5px);
+            color: #5f2da1;
+            font-weight: bold;
+            filter: brightness(1)
+        }
+    }
+}

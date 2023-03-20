@@ -1,0 +1,56 @@
+.navegacion {
+    background-color: #eacaff;
+    height: 4rem;
+    padding-left: 1rem;
+
+    .refugiolunar { 
+        color: #5f2da1;
+        &:hover {
+            filter: brightness(0.5);
+        }
+        }
+
+    .menu {
+        text-decoration: none;
+        font-family: sans-serif;
+        font-weight: bolder;
+        list-style-type: none;
+        gap: 5px;
+        display: flex;
+        align-items: center;
+
+        .translate {
+            transition: 500ms;
+
+            &:hover {
+                transform: translateY(-5px);
+                color: #5f2da1;
+                font-weight: bold;
+                filter: brightness(1)
+            }
+
+            .inicio {
+                font-family: CenturyGothic;
+                text-decoration: none;
+                font-size: 24px;
+                color: #754da8;
+            }
+
+            .links {
+                font-family: CenturyGothic;
+                text-decoration: none;
+                font-size: 20px;
+                color: #9f86c0;
+            }
+        } 
+    }
+
+    .logo {
+        width: 55px;
+        display: flex;
+        flex-direction: row;
+        justify-items: flex-start;
+        align-items: flex-start;
+        animation: RotateIn 5s;     
+    }
+}

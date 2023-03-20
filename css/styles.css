@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: none;
+}
+
+@font-face {
+  font-family: "HighSpirited";
+  src: url(../fonts/High\ Spirited.ttf);
+}
+@font-face {
+  font-family: "CenturyGothic";
+  src: url(../fonts/Century\ Gothic\ Normal.TTF);
+}
+.navegacion {
+  background-color: #eacaff;
+  height: 4rem;
+  padding-left: 1rem;
+}
+.navegacion .refugiolunar {
+  color: #5f2da1;
+}
+.navegacion .refugiolunar:hover {
+  filter: brightness(0.5);
+}
+.navegacion .menu {
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: bolder;
+  list-style-type: none;
+  gap: 5px;
+  display: flex;
+  align-items: center;
+}
+.navegacion .menu .translate {
+  transition: 500ms;
+}
+.navegacion .menu .translate:hover {
+  transform: translateY(-5px);
+  color: #5f2da1;
+  font-weight: bold;
+  filter: brightness(1);
+}
+.navegacion .menu .translate .inicio {
+  font-family: CenturyGothic;
+  text-decoration: none;
+  font-size: 24px;
+  color: #754da8;
+}
+.navegacion .menu .translate .links {
+  font-family: CenturyGothic;
+  text-decoration: none;
+  font-size: 20px;
+  color: #9f86c0;
+}
+.navegacion .logo {
+  width: 55px;
+  display: flex;
+  flex-direction: row;
+  justify-items: flex-start;
+  align-items: flex-start;
+  animation: RotateIn 5s;
+}
+
+footer {
+  background-color: #eacaff;
+  padding: 0.5rem;
+}
+footer .translate {
+  transition: 500ms;
+}
+footer .translate:hover {
+  transform: translateY(-5px);
+  color: #5f2da1;
+  font-weight: bold;
+  filter: brightness(1);
+}
+@keyframes RotateIn {
+  0% {
+    transform: rotateY(0);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}/*# sourceMappingURL=styles.css.map */
