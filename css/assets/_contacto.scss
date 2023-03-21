@@ -1,0 +1,118 @@
+.fcontacto { 
+    background-image: url(../../images/contacto.jpeg);
+    height: auto;
+
+    .contact_form {
+        font-family: CenturyGothic;
+        width: 480px;
+        height: auto;
+        margin: 80px auto;
+        border-radius: 10px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        background-color: #fbfbfb;
+        padding-left: 20px;
+    
+        .formulario {
+    
+            &__title1 {
+                font-family: HighSpirited;
+                text-align: center;
+                color:  #eacaff;
+                padding-right: 1.5rem;
+
+                h1 {
+                    font-weight: bold;
+                    font-size: 70px;
+                }
+            }
+    
+            &__title2 {
+                font-size: 20px;
+                color: #0e0e0e;
+            }
+    
+            &__form {
+    
+                input {
+                    justify-content: start;
+                    background-color: #fbfbfb;
+                    width: 440px;
+                    height: 40px;
+                    border-radius: 5px;
+                    border-style: solid;
+                    border-width: 1px;
+                    border-color:  #eacaff;
+                    margin-top: 10px;
+                    padding-left: 10px;
+                    margin-bottom: 20px;
+    
+                    &:focus {
+                    outline:0;
+                    border: 1px solid #b514ffb5;
+                    }
+                }
+    
+                textarea {
+                    background-color: #fbfbfb;
+                    width: 440px;
+                    height: 150px;
+                    border-radius: 5px;
+                    border-style: solid;
+                    border-width: 1px;
+                    border-color:  #eacaff;
+                    margin-top: 10px;
+                    padding-left: 10px;
+                    margin-bottom: 20px;
+                    padding-top: 15px;
+    
+                    &:focus {
+                        outline:0;
+                        border: 1px solid #b514ffb5;
+                    }
+                }
+    
+                label {
+                    display: block;
+                    float: center;
+                }
+    
+               
+                button {
+                    text-transform: uppercase;
+                    background-color: #eacaff;
+                    border-color: #eacaff;
+                    border-style: solid;
+                    border-radius: 10px;
+                    width: 440px;
+                    cursor: pointer;
+    
+                    p {
+                        color: #ffffff;
+                        text-align: center;
+                        align-items: center;
+                        font-weight: bold;
+                        font-size: 20px;
+                        padding-top: 10px;
+
+                    }
+                }
+            
+                span {
+                   color: #b514ffb5;
+                }
+    
+                .aviso {
+                    font-size: 13px;
+                    color: #0e0e0e;
+                }
+    
+                p {
+                    font-size: 14px; 
+                    color: #0e0e0e;
+                }
+            }
+        }
+    }
+}
+

@@ -75,6 +75,9 @@ footer .translate:hover {
   font-weight: bold;
   filter: brightness(1);
 }
+footer .footer_der {
+  background-color: rgba(0, 0, 0, 0.1);
+}
 
 main {
   width: auto;
@@ -313,6 +316,102 @@ main .seccion2 .card__text {
   font-family: CenturyGothic;
   color: #eacaff;
   background-color: rgba(0, 0, 0, 0.3960784314);
+}
+
+.fcontacto {
+  background-image: url(../../images/contacto.jpeg);
+  height: auto;
+}
+.fcontacto .contact_form {
+  font-family: CenturyGothic;
+  width: 480px;
+  height: auto;
+  margin: 80px auto;
+  border-radius: 10px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  background-color: #fbfbfb;
+  padding-left: 20px;
+}
+.fcontacto .contact_form .formulario__title1 {
+  font-family: HighSpirited;
+  text-align: center;
+  color: #eacaff;
+  padding-right: 1.5rem;
+}
+.fcontacto .contact_form .formulario__title1 h1 {
+  font-weight: bold;
+  font-size: 70px;
+}
+.fcontacto .contact_form .formulario__title2 {
+  font-size: 20px;
+  color: #0e0e0e;
+}
+.fcontacto .contact_form .formulario__form input {
+  justify-content: start;
+  background-color: #fbfbfb;
+  width: 440px;
+  height: 40px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #eacaff;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+.fcontacto .contact_form .formulario__form input:focus {
+  outline: 0;
+  border: 1px solid rgba(181, 20, 255, 0.7098039216);
+}
+.fcontacto .contact_form .formulario__form textarea {
+  background-color: #fbfbfb;
+  width: 440px;
+  height: 150px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #eacaff;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  padding-top: 15px;
+}
+.fcontacto .contact_form .formulario__form textarea:focus {
+  outline: 0;
+  border: 1px solid rgba(181, 20, 255, 0.7098039216);
+}
+.fcontacto .contact_form .formulario__form label {
+  display: block;
+  float: center;
+}
+.fcontacto .contact_form .formulario__form button {
+  text-transform: uppercase;
+  background-color: #eacaff;
+  border-color: #eacaff;
+  border-style: solid;
+  border-radius: 10px;
+  width: 440px;
+  cursor: pointer;
+}
+.fcontacto .contact_form .formulario__form button p {
+  color: #ffffff;
+  text-align: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 20px;
+  padding-top: 10px;
+}
+.fcontacto .contact_form .formulario__form span {
+  color: rgba(181, 20, 255, 0.7098039216);
+}
+.fcontacto .contact_form .formulario__form .aviso {
+  font-size: 13px;
+  color: #0e0e0e;
+}
+.fcontacto .contact_form .formulario__form p {
+  font-size: 14px;
+  color: #0e0e0e;
 }
 @keyframes RotateIn {
   0% {
