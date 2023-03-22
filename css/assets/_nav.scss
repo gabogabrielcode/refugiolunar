@@ -1,48 +1,69 @@
 .navegacion {
-    background-color: #eacaff;
+    background-color: $primerColor;
     height: 4rem;
     padding-left: 1rem;
 
-    .refugiolunar { 
-        color: #5f2da1;
+    .refugiolunar {
+        font-family: $fontInspiration;
+        color: $tercerColor;
+        font-size: 2rem;
+
         &:hover {
-            filter: brightness(0.5);
+            filter: brightness(0.1);
         }
-        }
+    }
 
     .menu {
+        background-color: $primerColor;
         text-decoration: none;
-        font-family: sans-serif;
-        font-weight: bolder;
         list-style-type: none;
         gap: 5px;
         display: flex;
         align-items: center;
+
+        ul {
+            background-color: #e4c2fa;
+            font-family: $fontGothic;
+
+            li {
+                a {
+                    color: $tercerColor;
+
+                    &:hover {
+                        background-color: $cuartoColor;
+                        color: $primerColor;
+                        transition: 500ms;
+                        transform: translateY(-1px)
+                    }
+                }
+            }
+        }
 
         .translate {
             transition: 500ms;
 
             &:hover {
                 transform: translateY(-3px);
-                color: #5f2da1;
-                font-weight: bold;
-                filter: brightness(1)
             }
 
             .inicio {
-                font-family: CenturyGothic;
+                font-family: $fontGothic;
+                font-weight: bold;
                 text-decoration: none;
                 font-size: 24px;
-                color: #754da8;
+                color: $cuartoColor;
             }
 
             .links {
-                font-family: CenturyGothic;
+                font-family: $fontGothic;
+                font-weight: bold;
                 text-decoration: none;
                 font-size: 20px;
-                color: #9f86c0;
+                color: $segundoColor;
             }
-        } 
+
+
+        }
     }
 
     .logo {
@@ -51,6 +72,6 @@
         flex-direction: row;
         justify-items: flex-start;
         align-items: flex-start;
-        animation: RotateIn 5s;     
+        animation: RotateIn 5s;
     }
 }

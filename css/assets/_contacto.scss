@@ -3,7 +3,7 @@
     height: auto;
 
     .contact_form {
-        font-family: CenturyGothic;
+        font-family: $fontGothic;
         width: 480px;
         height: auto;
         margin: 80px auto;
@@ -16,9 +16,9 @@
         .formulario {
     
             &__title1 {
-                font-family: HighSpirited;
+                font-family: $fontInspiration;
                 text-align: center;
-                color:  #eacaff;
+                color:  $segundoColor;
                 padding-right: 1.5rem;
 
                 h1 {
@@ -29,7 +29,7 @@
     
             &__title2 {
                 font-size: 20px;
-                color: #0e0e0e;
+                color: $tercerColor;
             }
     
             &__form {
@@ -42,14 +42,14 @@
                     border-radius: 5px;
                     border-style: solid;
                     border-width: 1px;
-                    border-color:  #eacaff;
+                    border-color:  $primerColor;
                     margin-top: 10px;
                     padding-left: 10px;
                     margin-bottom: 20px;
     
                     &:focus {
                     outline:0;
-                    border: 1px solid #b514ffb5;
+                    border: 1px solid $segundoColor;
                     }
                 }
     
@@ -60,7 +60,7 @@
                     border-radius: 5px;
                     border-style: solid;
                     border-width: 1px;
-                    border-color:  #eacaff;
+                    border-color:  $primerColor;
                     margin-top: 10px;
                     padding-left: 10px;
                     margin-bottom: 20px;
@@ -68,7 +68,7 @@
     
                     &:focus {
                         outline:0;
-                        border: 1px solid #b514ffb5;
+                        border: 1px solid $segundoColor;
                     }
                 }
     
@@ -77,11 +77,10 @@
                     float: center;
                 }
     
-               
                 button {
                     text-transform: uppercase;
-                    background-color: #eacaff;
-                    border-color: #eacaff;
+                    background-color: $primerColor;
+                    border-color: $segundoColor;
                     border-style: solid;
                     border-radius: 10px;
                     width: 440px;
@@ -94,22 +93,21 @@
                         font-weight: bold;
                         font-size: 20px;
                         padding-top: 10px;
-
                     }
                 }
             
                 span {
-                   color: #b514ffb5;
+                   color: $segundoColor;
                 }
     
                 .aviso {
                     font-size: 13px;
-                    color: #0e0e0e;
+                    color: $tercerColor;
                 }
     
                 p {
                     font-size: 14px; 
-                    color: #0e0e0e;
+                    color: $tercerColor;
                 }
             }
         }

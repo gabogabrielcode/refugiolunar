@@ -7,8 +7,22 @@
         "imagen text1 text1"
         "imagen text1 text1"
         "imagen text2 text2"
-        "imagen text2 text2"
-    ;
+        "imagen text2 text2";
+
+    @include mobile {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        grid-template-areas: 
+        "titulo titulo"
+        "imagen imagen"
+        "imagen imagen"
+        "imagen imagen"
+        "text1 text1"
+        "text1 text1"
+        "text2 text2"
+        "text2 text2";
+    }
 
     .grid4__img {
         display: cover;
@@ -16,7 +30,7 @@
     }
 
     .grid4__titulo {
-        font-family: HighSpirited;
+        font-family: $fontInspiration;
         grid: titulo1;
         
         h1{

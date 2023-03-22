@@ -1,7 +1,6 @@
 .grid1 {
     min-height: 500px;
     width: 100%;
-
     display: grid;
     grid-template-columns: repeat(4 1fr);
     grid-template-rows: repeat(5, 1fr);
@@ -10,6 +9,19 @@
         "img1 img2 parrafo parrafo"
         "img1 img2 parrafo parrafo"
         "img1 img2 parrafo parrafo";
+
+    @include mobile {
+        max-height: 200px;
+        max-width: 768px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+            "img1 img2"
+            "img1 img2"
+            "titulo titulo"
+            "parrafo parrafo";
+    }
 
     .grid1__img1 {
         grid-area: img1;
@@ -40,6 +52,35 @@
         "parrafo1 parrafo1 imge1 imge2"
         "parrafo1 parrafo1 imge1 imge2";
     column-gap: 4px;
+
+    @include mobile {
+        max-height: 200px;
+        max-width: 768px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+            "img1 img2"
+            "img1 img2"
+            "titulo titulo"
+            "parrafo parrafo";
+
+        .grid2__img1 {
+            grid-area: img1;
+        }
+
+        .grid2__img2 {
+            grid-area: img2;
+        }
+
+        .grid2__titulo {
+            grid-area: titulo;
+        }
+
+        .grid2__parrafo {
+            grid-area: parrafo;
+        }
+    }
 
     .grid2__img1 {
         grid-area: imge1;

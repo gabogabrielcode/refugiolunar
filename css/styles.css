@@ -1,54 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Inspiration&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inspiration&display=swap");
+@font-face {
+  font-family: HighSpirited;
+  src: url(/fonts/HighSpirited.ttf);
+}
+@font-face {
+  font-family: CenturyGothic;
+  src: url(/fonts/CenturyGothic.ttf);
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: none;
 }
+*::-moz-selection {
+  background-color: #231942;
+  color: #9f86c0;
+}
+*::selection {
+  background-color: #231942;
+  color: #9f86c0;
+}
 
-@font-face {
-  font-family: "HighSpirited";
-  src: url(../fonts/High\ Spirited.ttf);
-}
-@font-face {
-  font-family: "CenturyGothic";
-  src: url(../fonts/Century\ Gothic\ Normal.TTF);
-}
 .navegacion {
   background-color: #eacaff;
   height: 4rem;
   padding-left: 1rem;
 }
 .navegacion .refugiolunar {
-  color: #5f2da1;
+  font-family: "Inspiration";
+  color: #5e548e;
+  font-size: 2rem;
 }
 .navegacion .refugiolunar:hover {
-  filter: brightness(0.5);
+  filter: brightness(0.1);
 }
 .navegacion .menu {
+  background-color: #eacaff;
   text-decoration: none;
-  font-family: sans-serif;
-  font-weight: bolder;
   list-style-type: none;
   gap: 5px;
   display: flex;
   align-items: center;
+}
+.navegacion .menu ul {
+  background-color: #e4c2fa;
+  font-family: "CenturyGothic";
+}
+.navegacion .menu ul li a {
+  color: #5e548e;
+}
+.navegacion .menu ul li a:hover {
+  background-color: #231942;
+  color: #eacaff;
+  transition: 500ms;
+  transform: translateY(-1px);
 }
 .navegacion .menu .translate {
   transition: 500ms;
 }
 .navegacion .menu .translate:hover {
   transform: translateY(-3px);
-  color: #5f2da1;
-  font-weight: bold;
-  filter: brightness(1);
 }
 .navegacion .menu .translate .inicio {
-  font-family: CenturyGothic;
+  font-family: "CenturyGothic";
+  font-weight: bold;
   text-decoration: none;
   font-size: 24px;
-  color: #754da8;
+  color: #231942;
 }
 .navegacion .menu .translate .links {
-  font-family: CenturyGothic;
+  font-family: "CenturyGothic";
+  font-weight: bold;
   text-decoration: none;
   font-size: 20px;
   color: #9f86c0;
@@ -71,7 +94,7 @@ footer .translate {
 }
 footer .translate:hover {
   transform: translateY(-5px);
-  color: #5f2da1;
+  color: #5e548e;
   font-weight: bold;
   filter: brightness(1);
 }
@@ -92,7 +115,7 @@ main .carrusel .subtitulo {
   font-size: 80px;
   font-weight: 500;
   text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.7);
-  font-family: "Dancing Script", cursive;
+  font-family: "Inspiration";
   margin-top: 0;
 }
 main .carrusel .subtitulo:hover {
@@ -101,9 +124,9 @@ main .carrusel .subtitulo:hover {
   color: #c090ff;
 }
 main .carrusel .descripcion {
-  font-family: "Dancing Script", cursive;
+  font-family: "CenturyGothic";
   color: rgba(255, 255, 255, 0.4588235294);
-  font-size: 30px;
+  font-size: 20px;
 }
 main .seccion2 {
   padding: 40px;
@@ -115,22 +138,23 @@ main .seccion2 {
   gap: 90px;
 }
 main .seccion2 .card {
-  background-color: #eacaff;
+  background-color: #9f86c0;
 }
 main .seccion2 .card__title {
-  font-family: HighSpirited;
-  font-size: 64px;
+  font-family: "Inspiration";
+  color: #eacaff;
+  font-size: 3.5rem;
   text-decoration: underline;
-  color: whitesmoke;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 main .seccion2 .card__text {
-  font-family: CenturyGothic;
+  font-family: "CenturyGothic";
   line-height: 0.9;
   text-align: center;
+  color: white;
 }
 
 .grid4 {
@@ -144,7 +168,7 @@ main .seccion2 .card__text {
   grid-area: imagen;
 }
 .grid4 .grid4__titulo {
-  font-family: HighSpirited;
+  font-family: "Inspiration";
   grid: titulo1;
 }
 .grid4 .grid4__titulo h1 {
@@ -222,17 +246,21 @@ main .seccion2 .card__text {
   grid-area: titagen;
 }
 .grid3 .tituloagenda__h1 {
-  font-family: HighSpirited;
+  font-family: "Inspiration";
   font-size: 6rem;
-  color: rgba(64, 0, 107, 0.74);
+  color: #9f86c0;
 }
 .grid3 .mes1 {
   grid-area: mes1;
 }
 .grid3 .mes1 .month {
   background-color: rgba(217, 188, 255, 0.74);
-  font-family: CenturyGothic;
+  font-family: "Raleway";
+  color: #231942;
   border-radius: 20px;
+}
+.grid3 .mes1 .month h2 {
+  color: #231942;
 }
 .grid3 .mes1 .mesx {
   list-style-type: none;
@@ -252,8 +280,12 @@ main .seccion2 .card__text {
 }
 .grid3 .mes2 .month {
   background-color: rgba(217, 188, 255, 0.74);
-  font-family: CenturyGothic;
+  font-family: "Raleway";
+  color: #231942;
   border-radius: 20px;
+}
+.grid3 .mes2 .month h2 {
+  color: #231942;
 }
 .grid3 .mes2 .mesx {
   list-style-type: none;
@@ -273,8 +305,12 @@ main .seccion2 .card__text {
 }
 .grid3 .mes3 .month {
   background-color: rgba(217, 188, 255, 0.74);
-  font-family: CenturyGothic;
+  font-family: "Raleway";
+  color: #231942;
   border-radius: 20px;
+}
+.grid3 .mes3 .month h2 {
+  color: #231942;
 }
 .grid3 .mes3 .mesx {
   list-style-type: none;
@@ -294,8 +330,12 @@ main .seccion2 .card__text {
 }
 .grid3 .mes4 .month {
   background-color: rgba(217, 188, 255, 0.74);
-  font-family: CenturyGothic;
+  font-family: "Raleway";
+  color: #231942;
   border-radius: 20px;
+}
+.grid3 .mes4 .month h2 {
+  color: #231942;
 }
 .grid3 .mes4 .mesx {
   list-style-type: none;
@@ -311,11 +351,11 @@ main .seccion2 .card__text {
   grid-column-start: 4;
 }
 .grid3 .form {
-  background-color: rgba(159, 134, 192, 0.4235294118);
-  grid-area: form;
-  font-family: CenturyGothic;
-  color: #eacaff;
   background-color: rgba(0, 0, 0, 0.3960784314);
+  color: #eacaff;
+  border-radius: 2rem;
+  font-family: "CenturyGothic";
+  grid-area: form;
 }
 
 .fcontacto {
@@ -323,7 +363,7 @@ main .seccion2 .card__text {
   height: auto;
 }
 .fcontacto .contact_form {
-  font-family: CenturyGothic;
+  font-family: "CenturyGothic";
   width: 480px;
   height: auto;
   margin: 80px auto;
@@ -334,9 +374,9 @@ main .seccion2 .card__text {
   padding-left: 20px;
 }
 .fcontacto .contact_form .formulario__title1 {
-  font-family: HighSpirited;
+  font-family: "Inspiration";
   text-align: center;
-  color: #eacaff;
+  color: #9f86c0;
   padding-right: 1.5rem;
 }
 .fcontacto .contact_form .formulario__title1 h1 {
@@ -345,7 +385,7 @@ main .seccion2 .card__text {
 }
 .fcontacto .contact_form .formulario__title2 {
   font-size: 20px;
-  color: #0e0e0e;
+  color: #5e548e;
 }
 .fcontacto .contact_form .formulario__form input {
   justify-content: start;
@@ -362,7 +402,7 @@ main .seccion2 .card__text {
 }
 .fcontacto .contact_form .formulario__form input:focus {
   outline: 0;
-  border: 1px solid rgba(181, 20, 255, 0.7098039216);
+  border: 1px solid #9f86c0;
 }
 .fcontacto .contact_form .formulario__form textarea {
   background-color: #fbfbfb;
@@ -379,7 +419,7 @@ main .seccion2 .card__text {
 }
 .fcontacto .contact_form .formulario__form textarea:focus {
   outline: 0;
-  border: 1px solid rgba(181, 20, 255, 0.7098039216);
+  border: 1px solid #9f86c0;
 }
 .fcontacto .contact_form .formulario__form label {
   display: block;
@@ -388,7 +428,7 @@ main .seccion2 .card__text {
 .fcontacto .contact_form .formulario__form button {
   text-transform: uppercase;
   background-color: #eacaff;
-  border-color: #eacaff;
+  border-color: #9f86c0;
   border-style: solid;
   border-radius: 10px;
   width: 440px;
@@ -403,15 +443,15 @@ main .seccion2 .card__text {
   padding-top: 10px;
 }
 .fcontacto .contact_form .formulario__form span {
-  color: rgba(181, 20, 255, 0.7098039216);
+  color: #9f86c0;
 }
 .fcontacto .contact_form .formulario__form .aviso {
   font-size: 13px;
-  color: #0e0e0e;
+  color: #5e548e;
 }
 .fcontacto .contact_form .formulario__form p {
   font-size: 14px;
-  color: #0e0e0e;
+  color: #5e548e;
 }
 @keyframes RotateIn {
   0% {

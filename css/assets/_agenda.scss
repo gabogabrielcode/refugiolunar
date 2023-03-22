@@ -11,19 +11,34 @@
         "mes1 mes1 mes2 mes2 form form form form"
         "mes1 mes1 mes2 mes2 form form form form"
         "mes3 mes3 mes4 mes4 form form form form"
-        "mes3 mes3 mes4 mes4 form form form form"
-    ;
+        "mes3 mes3 mes4 mes4 form form form form";
     gap: 5px;
     padding: 0;
+
+    @include mobile {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(8, 1fr);
+            grid-template-areas: 
+            "titagen titagen"
+            "mes1 mes1"
+            "mes2 mes2"
+            "mes3 mes3"
+            "mes4 mes4"
+            "form form"
+            "form form";
+    }
+
+    
 
     .tituloagenda {
         text-align: center;
         grid-area: titagen;
 
         &__h1 {
-            font-family: HighSpirited;
+            font-family: $fontInspiration;
             font-size: 6rem;
-            color: rgba(64, 0, 107, 0.74);
+            color: $segundoColor;
         }
     }
 
@@ -32,8 +47,13 @@
 
         .month {
             background-color: rgba(217, 188, 255, 0.74);
-            font-family: CenturyGothic;
+            font-family: $fontRaleway;
+            color: $cuartoColor;
             border-radius: 20px;
+
+            h2 {
+                color: $cuartoColor;
+            }
         }
 
         .mesx {
@@ -42,9 +62,9 @@
             grid-template-columns: repeat(7, 1fr);
             align-items: center;
 
-            .dia{
-                background-color: #9f86c0;
-                font-weight: bold;      
+            .dia {
+                background-color: $segundoColor;
+                font-weight: bold;
             }
 
             .primerdia3 {
@@ -59,8 +79,13 @@
 
         .month {
             background-color: rgba(217, 188, 255, 0.74);
-            font-family: CenturyGothic;
+            font-family: $fontRaleway;
+            color: $cuartoColor;
             border-radius: 20px;
+
+            h2 {
+                color: $cuartoColor;
+            }
         }
 
         .mesx {
@@ -69,9 +94,9 @@
             grid-template-columns: repeat(7, 1fr);
             align-items: center;
 
-            .dia{
-                background-color: #9f86c0;
-                font-weight: bold;      
+            .dia {
+                background-color: $segundoColor;
+                font-weight: bold;
             }
 
             .primerdia3 {
@@ -86,8 +111,13 @@
 
         .month {
             background-color: rgba(217, 188, 255, 0.74);
-            font-family: CenturyGothic;
+            font-family: $fontRaleway;
+            color: $cuartoColor;
             border-radius: 20px;
+
+            h2 {
+                color: $cuartoColor;
+            }
         }
 
         .mesx {
@@ -96,9 +126,9 @@
             grid-template-columns: repeat(7, 1fr);
             align-items: center;
 
-            .dia{
-                background-color: #9f86c0;
-                font-weight: bold;      
+            .dia {
+                background-color: $segundoColor;
+                font-weight: bold;
             }
 
             .primerdia3 {
@@ -113,8 +143,13 @@
 
         .month {
             background-color: rgba(217, 188, 255, 0.74);
-            font-family: CenturyGothic;
+            font-family: $fontRaleway;
+            color: $cuartoColor;
             border-radius: 20px;
+
+            h2 {
+                color: $cuartoColor;
+            }
         }
 
         .mesx {
@@ -123,9 +158,9 @@
             grid-template-columns: repeat(7, 1fr);
             align-items: center;
 
-            .dia{
-                background-color: #9f86c0;
-                font-weight: bold;      
+            .dia {
+                background-color: $segundoColor;
+                font-weight: bold;
             }
 
             .primerdia3 {
@@ -136,14 +171,10 @@
     }
 
     .form {
-        background-color: #9f86c06c;
-        grid-area: form;
-        font-family: CenturyGothic;
-        color:#eacaff;
         background-color: #00000065;
+        color: $primerColor;
+        border-radius: 2rem;
+        font-family: $fontGothic;
+        grid-area: form;
     }
-   
-
-
-
 }
