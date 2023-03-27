@@ -21,6 +21,11 @@
         display: flex;
         align-items: center;
 
+        @include mobile {
+            background-color: black;
+            
+        }
+
         ul {
             background-color: #e4c2fa;
             font-family: $fontGothic;
@@ -78,4 +83,10 @@
         justify-items: flex-start;
         align-items: flex-start;
         animation: RotateIn 5s;
+
+        @include mobile {
+            position: absolute;
+            opacity: 0%;
+        
+        }
     }

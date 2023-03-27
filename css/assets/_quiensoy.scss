@@ -1,52 +1,84 @@
-.grid4 {
+.parent {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-template-areas:
-        "imagen titulo1 titulo1"
-        "imagen text1 text1"
-        "imagen text1 text1"
-        "imagen text2 text2"
-        "imagen text2 text2";
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    height: 130vh;
 
-    @include mobile {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(8, 1fr);
-        grid-template-areas: 
-        "titulo titulo"
-        "imagen imagen"
-        "imagen imagen"
-        "imagen imagen"
-        "text1 text1"
-        "text1 text1"
-        "text2 text2"
-        "text2 text2";
+    .subtitulosm {
+        font-family: $fontSpirited;
+        text-decoration: underline;
+        color: $segundoColor;
+        font-size: 70px;
+        text-align: start;
+        padding-left: 4rem;
     }
 
-    .grid4__img {
-        display: cover;
-        grid-area: imagen;
+    .parrafosm {
+        color: $cuartoColor;
+        font-family: $fontGothic;
+        font-size: 1.2rem;
+        text-align: start;
+        padding-inline: 4rem
     }
 
-    .grid4__titulo {
-        font-family: $fontInspiration;
-        grid: titulo1;
-        
-        h1{
-            font-size: 120px;
+    .div1 {
+        grid-area: 1 / 1 / 2 / 9;
+
+        h1 {
+            background-image: url(/images/contacto.jpeg);
+            height: 100%;
+            color: $tercerColor;
+            font-family: $fontInspiration;
+            font-size: 7rem;
+            text-align: center;
+            padding-top: 1rem;
+        }
+
+    }
+
+    .div2 {
+
+        grid-area: 2 / 1 / 8 / 4;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
         }
     }
 
-    .grid4__texto1 {
-        background-color: blue;
-        width: 100%;
-        grid-area: text1;
+    .div3 {
+        grid-area: 2 / 4 / 3 / 9;
+
+        h3 {
+            padding-top: 4rem;
+        }
     }
 
-    .grid4__texto2 {
-        background-color: purple;
-        width: 100%;
-        grid-area: text2;
+    .div4 {
+        grid-area: 3 / 4 / 3 / 9;
+    }
+
+    .div5 {
+        margin-top: 175px;
+        margin-bottom: 250px;
+        grid-area: 5 / 4 / 3 / 9;
+    }
+
+    .div6 {
+        grid-area: 8 / 4 / 4 / 9;
+        padding-bottom: 8rem;
+        margin-top: 75px;
+
+        h4 {
+            font-family: $fontSpirited;
+            color: $segundoColor;
+            font-size: 50px;
+            text-align: center;
+            padding-inline: 4rem;
+
+        }
     }
 }
