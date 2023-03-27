@@ -30,7 +30,7 @@
                     color: $tercerColor;
 
                     &:hover {
-                        background-color: $cuartoColor;
+                        background-color: $tercerColor;
                         color: $primerColor;
                         transition: 500ms;
                         transform: translateY(-1px)
@@ -51,7 +51,11 @@
                 font-weight: bold;
                 text-decoration: none;
                 font-size: 24px;
-                color: $cuartoColor;
+                
+                &:hover {
+                    color: white;
+                }
+                }
             }
 
             .links {
@@ -59,10 +63,11 @@
                 font-weight: bold;
                 text-decoration: none;
                 font-size: 20px;
-                color: $segundoColor;
+
+                &:hover {
+                    color: white;
+                }
             }
-
-
         }
     }
 
@@ -74,4 +79,3 @@
         align-items: flex-start;
         animation: RotateIn 5s;
     }
-}
