@@ -43,11 +43,6 @@
   display: flex;
   align-items: center;
 }
-@media screen and (max-width: 768px) {
-  .navegacion .menu {
-    background-color: black;
-  }
-}
 .navegacion .menu ul {
   background-color: #e4c2fa;
   font-family: "CenturyGothic";
@@ -257,79 +252,159 @@ main .seccion2 .card__text {
 }
 
 .grid1 {
-  min-height: 500px;
-  width: 100%;
   display: grid;
-  grid-template-columns: repeat(4 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  grid-template-areas: "img1 img2 titulo titulo" "img1 img2 parrafo parrafo" "img1 img2 parrafo parrafo" "img1 img2 parrafo parrafo";
+  grid-template-columns: 1.3fr 1.4fr repeat(2, 1.3fr);
+  grid-template-rows: 0.7fr 0.4fr 1.4fr 0.4fr 1fr 0.4fr 1.3fr 0.4fr 1fr;
+  grid-auto-flow: row;
+  grid-template-areas: "grid1_tit grid1_tit grid1_tit grid1_tit" "grid1_foto1 grid1_foto2 grid1_subtit1 grid1_subtit1" "grid1_foto1 grid1_foto2 grid1parr1 grid1parr1" "grid1_foto1 grid1_foto2 grid1subtitulo2 grid1subtitulo2" "grid1_foto1 grid1_foto2 grid1parr2 grid1parr2" "grid1_subtit3 grid1_subtit3 grid1_foto4 grid1_foto3" "grid1_parr3 grid1_parr3 grid1_foto4 grid1_foto3" "grid1_subtit4 grid1_subtit4 grid1_foto4 grid1_foto3" "grid1_parr4 grid1_parr4 grid1_foto4 grid1_foto3";
 }
 @media screen and (max-width: 768px) {
   .grid1 {
-    max-height: 200px;
-    max-width: 768px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(4, 1fr);
-    grid-template-areas: "img1 img2" "img1 img2" "titulo titulo" "parrafo parrafo";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(13, 1fr);
+    grid-template-areas: "grid1_tit grid1_tit" "grid1_foto1 grid1_foto2" "grid1_foto1 grid1_foto2" "grid1_subtit1 grid1_subtit1" "grid1parr1 grid1parr1" "grid1_subtit2 grid1_subti2" "grid1parr2 grid1parr2" "grid1_foto4 grid1_foto3" "grid1_foto4 grid1_foto3" "grid1_subtit3 grid1_subtit3" "grid1parr3 grid1parr3" "grid1_subtit4 grid1_subti4" "grid1parr4 grid1parr4";
   }
 }
-.grid1 .grid1__img1 {
-  grid-area: img1;
+.grid1 .fotosterap {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
-.grid1 .grid1__img2 {
-  grid-area: img2;
+.grid1 .subtitulosterap {
+  text-align: center;
+  text-decoration: underline;
+  font-family: "HighSpirited";
+  font-size: 80px;
+  color: #9f86c0;
 }
-.grid1 .grid1__titulo {
-  grid-area: titulo;
+.grid1 .objetivo {
+  text-align: center;
+  font-family: "HighSpirited";
+  font-size: 50px;
+  color: #9f86c0;
+  padding-inline: 2rem;
 }
-.grid1 .grid1__parrafo {
-  grid-area: parrafo;
+.grid1 .parrafos {
+  text-align: justify;
+  font-family: "CenturyGothic";
+  padding-inline: 2rem;
+}
+.grid1_titulo {
+  background-image: url(/images/contacto.jpeg);
+  grid-area: grid1_tit;
+}
+.grid1_titulo h1 {
+  text-align: center;
+  font-family: "Inspiration";
+  font-size: 100px;
+  color: #9f86c0;
+}
+.grid1_foto1 {
+  grid-area: grid1_foto1;
+}
+.grid1_foto2 {
+  grid-area: grid1_foto2;
+}
+.grid1_subtit1 {
+  grid-area: grid1_subtit1;
+}
+.grid1_parr1 {
+  grid-area: grid1parr1;
+}
+.grid1_subtit2 {
+  grid-area: grid1subtitulo2;
+}
+.grid1_parr2 {
+  grid-area: grid1parr2;
+}
+.grid1_foto3 {
+  grid-area: grid1_foto3;
+}
+.grid1_foto4 {
+  grid-area: grid1_foto4;
+}
+.grid1_subtit3 {
+  grid-area: grid1_subtit3;
+}
+.grid1_parr3 {
+  grid-area: grid1_parr3;
+}
+.grid1_subtit4 {
+  grid-area: grid1_subtit4;
+}
+.grid1_parr4 {
+  grid-area: grid1_parr4;
 }
 
 .grid2 {
-  width: 100%;
-  min-height: 500px;
   display: grid;
-  grid-template-columns: repeat(4 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  grid-template-areas: "titulo1 titulo1 imge1 imge2" "parrafo1 parrafo1 imge1 imge2" "parrafo1 parrafo1 imge1 imge2" "parrafo1 parrafo1 imge1 imge2";
-  -moz-column-gap: 4px;
-       column-gap: 4px;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1.3fr 1.4fr repeat(2, 1.3fr);
+  grid-template-rows: 0.4fr 1.2fr 0.4fr 0.5fr 0.4fr 1fr 0.4fr 0.3fr;
+  grid-template-areas: "grid2_foto1 grid2_foto2 grid2_subtit1 grid2_subtit1" "grid2_foto1 grid2_foto2 grid2_parr1 grid2_parr1" "grid2_foto1 grid2_foto2 grid2_subtit2 grid2_subtit2" "grid2_foto1 grid2_foto2 grid2_parr2 grid2_parr2" "grid2_subtit3 grid2_subtit3 grid2_foto4 grid2_foto3" "grid2_parr3 grid2_parr3 grid2_foto4 grid2_foto3" "grid2_subtit4 grid2_subtit4 grid2_foto4 grid2_foto3" "grid2_parr4 grid2_parr4 grid2_foto4 grid2_foto3";
 }
-@media screen and (max-width: 768px) {
-  .grid2 {
-    max-height: 200px;
-    max-width: 768px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(4, 1fr);
-    grid-template-areas: "img1 img2" "img1 img2" "titulo titulo" "parrafo parrafo";
-  }
-  .grid2 .grid2__img1 {
-    grid-area: img1;
-  }
-  .grid2 .grid2__img2 {
-    grid-area: img2;
-  }
-  .grid2 .grid2__titulo {
-    grid-area: titulo;
-  }
-  .grid2 .grid2__parrafo {
-    grid-area: parrafo;
-  }
+.grid2 .fotosterap {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
-.grid2 .grid2__img1 {
-  grid-area: imge1;
+.grid2 .subtitulosterap {
+  text-align: center;
+  text-decoration: underline;
+  font-family: "HighSpirited";
+  font-size: 80px;
+  color: #9f86c0;
 }
-.grid2 .grid2__img2 {
-  grid-area: imge2;
+.grid2 .objetivo {
+  text-align: center;
+  font-family: "HighSpirited";
+  font-size: 50px;
+  color: #9f86c0;
+  padding-inline: 2rem;
 }
-.grid2 .grid2__titulo {
-  grid-area: titulo1;
+.grid2 .parrafos {
+  text-align: justify;
+  font-family: "CenturyGothic";
+  padding-inline: 2rem;
 }
-.grid2 .grid2__parrafo {
-  grid-area: parrafo1;
+.grid2 .grid2_foto1 {
+  grid-area: grid2_foto1;
+}
+.grid2 .grid2_foto2 {
+  grid-area: grid2_foto2;
+}
+.grid2 .grid2_subtit1 {
+  grid-area: grid2_subtit1;
+}
+.grid2 .grid2_parr1 {
+  grid-area: grid2_parr1;
+}
+.grid2 .grid2_subtit2 {
+  grid-area: grid2_subtit2;
+}
+.grid2 .grid2_parr2 {
+  grid-area: grid2_parr2;
+}
+.grid2 .grid2_foto3 {
+  grid-area: grid2_foto3;
+}
+.grid2 .grid2_foto4 {
+  grid-area: grid2_foto4;
+}
+.grid2 .grid2_subtit3 {
+  grid-area: grid2_subtit3;
+}
+.grid2 .grid2_parr3 {
+  grid-area: grid2_parr3;
+}
+.grid2 .grid2_subtit4 {
+  grid-area: grid2_subtit4;
+}
+.grid2 .grid2_parr4 {
+  grid-area: grid2_parr4;
 }
 
 .grid3 {
@@ -353,6 +428,7 @@ main .seccion2 .card__text {
   }
 }
 .grid3 .tituloagenda {
+  background-image: url(/images/contacto.jpeg);
   text-align: center;
   grid-area: titagen;
 }

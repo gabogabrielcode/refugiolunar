@@ -1,100 +1,219 @@
 .grid1 {
-    min-height: 500px;
-    width: 100%;
     display: grid;
-    grid-template-columns: repeat(4 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: 1.3fr 1.4fr repeat(2, 1.3fr);
+    grid-template-rows: 0.7fr 0.4fr 1.4fr 0.4fr 1fr 0.4fr 1.3fr 0.4fr 1fr;
+    grid-auto-flow: row;
     grid-template-areas:
-        "img1 img2 titulo titulo"
-        "img1 img2 parrafo parrafo"
-        "img1 img2 parrafo parrafo"
-        "img1 img2 parrafo parrafo";
+        "grid1_tit grid1_tit grid1_tit grid1_tit"
+        "grid1_foto1 grid1_foto2 grid1_subtit1 grid1_subtit1"
+        "grid1_foto1 grid1_foto2 grid1parr1 grid1parr1"
+        "grid1_foto1 grid1_foto2 grid1subtitulo2 grid1subtitulo2"
+        "grid1_foto1 grid1_foto2 grid1parr2 grid1parr2"
+        "grid1_subtit3 grid1_subtit3 grid1_foto4 grid1_foto3"
+        "grid1_parr3 grid1_parr3 grid1_foto4 grid1_foto3"
+        "grid1_subtit4 grid1_subtit4 grid1_foto4 grid1_foto3"
+        "grid1_parr4 grid1_parr4 grid1_foto4 grid1_foto3";
 
     @include mobile {
-        max-height: 200px;
-        max-width: 768px;
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(13, 1fr);
         grid-template-areas:
-            "img1 img2"
-            "img1 img2"
-            "titulo titulo"
-            "parrafo parrafo";
+            "grid1_tit grid1_tit"
+            "grid1_foto1 grid1_foto2"
+            "grid1_foto1 grid1_foto2"
+            "grid1_subtit1 grid1_subtit1"
+            "grid1parr1 grid1parr1"
+            "grid1_subtit2 grid1_subti2"
+            "grid1parr2 grid1parr2"
+            "grid1_foto4 grid1_foto3"
+            "grid1_foto4 grid1_foto3"
+            "grid1_subtit3 grid1_subtit3"
+            "grid1parr3 grid1parr3"
+            "grid1_subtit4 grid1_subti4"
+            "grid1parr4 grid1parr4";
     }
 
-    .grid1__img1 {
-        grid-area: img1;
+    .fotosterap {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
     }
 
-    .grid1__img2 {
-        grid-area: img2;
+    .subtitulosterap {
+        text-align: center;
+        text-decoration: underline;
+        font-family: $fontSpirited;
+        font-size: 80px;
+        color: $segundoColor;
     }
 
-    .grid1__titulo {
-        grid-area: titulo;
+    .objetivo {
+        text-align: center;
+        font-family: $fontSpirited;
+        font-size: 50px;
+        color: $segundoColor;
+        padding-inline: 2rem;
     }
 
-    .grid1__parrafo {
-        grid-area: parrafo;
+    .parrafos {
+        text-align: justify;
+        font-family: $fontGothic;
+        padding-inline: 2rem;
+  
     }
+
+    &_titulo {
+        background-image: url(/images/contacto.jpeg);
+        grid-area: grid1_tit;
+
+        h1 {
+            text-align: center;
+            font-family: $fontInspiration;
+            font-size: 100px;
+            color: $segundoColor
+        }
+    }
+
+    &_foto1 {
+        grid-area: grid1_foto1;
+    }
+
+    &_foto2 {
+        grid-area: grid1_foto2;
+    }
+
+    &_subtit1 {
+        grid-area: grid1_subtit1;
+    }
+
+    &_parr1 {
+        grid-area: grid1parr1;
+    }
+
+    &_subtit2 {
+        grid-area: grid1subtitulo2;
+    }
+
+    &_parr2 {
+        grid-area: grid1parr2;
+    }
+
+    &_foto3 {
+        grid-area: grid1_foto3;
+    }
+
+    &_foto4 {
+        grid-area: grid1_foto4;
+    }
+
+    &_subtit3 {
+        grid-area: grid1_subtit3;
+    }
+
+    &_parr3 {
+        grid-area: grid1_parr3;
+    }
+
+    &_subtit4 {
+        grid-area: grid1_subtit4;
+    }
+
+    &_parr4 {
+        grid-area: grid1_parr4;
+    }
+
 }
 
 .grid2 {
-    width: 100%;
-    min-height: 500px;
     display: grid;
-    grid-template-columns: repeat(4 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1.3fr 1.4fr repeat(2, 1.3fr);
+    grid-template-rows: 0.4fr 1.2fr 0.4fr 0.5fr 0.4fr 1fr 0.4fr 0.3fr;
     grid-template-areas:
-        "titulo1 titulo1 imge1 imge2"
-        "parrafo1 parrafo1 imge1 imge2"
-        "parrafo1 parrafo1 imge1 imge2"
-        "parrafo1 parrafo1 imge1 imge2";
-    column-gap: 4px;
+        "grid2_foto1 grid2_foto2 grid2_subtit1 grid2_subtit1"
+        "grid2_foto1 grid2_foto2 grid2_parr1 grid2_parr1"
+        "grid2_foto1 grid2_foto2 grid2_subtit2 grid2_subtit2"
+        "grid2_foto1 grid2_foto2 grid2_parr2 grid2_parr2"
+        "grid2_subtit3 grid2_subtit3 grid2_foto4 grid2_foto3"
+        "grid2_parr3 grid2_parr3 grid2_foto4 grid2_foto3"
+        "grid2_subtit4 grid2_subtit4 grid2_foto4 grid2_foto3"
+        "grid2_parr4 grid2_parr4 grid2_foto4 grid2_foto3";
 
-    @include mobile {
-        max-height: 200px;
-        max-width: 768px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(4, 1fr);
-        grid-template-areas:
-            "img1 img2"
-            "img1 img2"
-            "titulo titulo"
-            "parrafo parrafo";
-
-        .grid2__img1 {
-            grid-area: img1;
+        .fotosterap {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
         }
-
-        .grid2__img2 {
-            grid-area: img2;
+    
+        .subtitulosterap {
+            text-align: center;
+            text-decoration: underline;
+            font-family: $fontSpirited;
+            font-size: 80px;
+            color: $segundoColor;
         }
-
-        .grid2__titulo {
-            grid-area: titulo;
+    
+        .objetivo {
+            text-align: center;
+            font-family: $fontSpirited;
+            font-size: 50px;
+            color: $segundoColor;
+            padding-inline: 2rem;
         }
-
-        .grid2__parrafo {
-            grid-area: parrafo;
+    
+        .parrafos {
+            text-align: justify;
+            font-family: $fontGothic;
+            padding-inline: 2rem;
         }
+    
+
+    .grid2_foto1 {
+        grid-area: grid2_foto1;
     }
 
-    .grid2__img1 {
-        grid-area: imge1;
+    .grid2_foto2 {
+        grid-area: grid2_foto2;
     }
 
-    .grid2__img2 {
-        grid-area: imge2;
+    .grid2_subtit1 {
+        grid-area: grid2_subtit1;
     }
 
-    .grid2__titulo {
-        grid-area: titulo1;
+    .grid2_parr1 {
+        grid-area: grid2_parr1;
     }
 
-    .grid2__parrafo {
-        grid-area: parrafo1;
+    .grid2_subtit2 {
+        grid-area: grid2_subtit2;
+    }
+
+    .grid2_parr2 {
+        grid-area: grid2_parr2;
+    }
+
+    .grid2_foto3 {
+        grid-area: grid2_foto3;
+    }
+
+    .grid2_foto4 {
+        grid-area: grid2_foto4;
+    }
+
+    .grid2_subtit3 {
+        grid-area: grid2_subtit3;
+    }
+
+    .grid2_parr3 {
+        grid-area: grid2_parr3;
+    }
+
+    .grid2_subtit4 {
+        grid-area: grid2_subtit4;
+    }
+
+    .grid2_parr4 {
+        grid-area: grid2_parr4;
     }
 }

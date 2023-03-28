@@ -21,11 +21,6 @@
         display: flex;
         align-items: center;
 
-        @include mobile {
-            background-color: black;
-            
-        }
-
         ul {
             background-color: #e4c2fa;
             font-family: $fontGothic;
@@ -87,6 +82,5 @@
         @include mobile {
             position: absolute;
             opacity: 0%;
-        
         }
     }
