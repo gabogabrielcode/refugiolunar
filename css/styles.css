@@ -251,160 +251,96 @@ main .seccion2 .card__text {
   padding-inline: 4rem;
 }
 
-.grid1 {
-  display: grid;
-  grid-template-columns: 1.3fr 1.4fr repeat(2, 1.3fr);
-  grid-template-rows: 0.7fr 0.4fr 1.4fr 0.4fr 1fr 0.4fr 1.3fr 0.4fr 1fr;
-  grid-auto-flow: row;
-  grid-template-areas: "grid1_tit grid1_tit grid1_tit grid1_tit" "grid1_foto1 grid1_foto2 grid1_subtit1 grid1_subtit1" "grid1_foto1 grid1_foto2 grid1parr1 grid1parr1" "grid1_foto1 grid1_foto2 grid1subtitulo2 grid1subtitulo2" "grid1_foto1 grid1_foto2 grid1parr2 grid1parr2" "grid1_subtit3 grid1_subtit3 grid1_foto4 grid1_foto3" "grid1_parr3 grid1_parr3 grid1_foto4 grid1_foto3" "grid1_subtit4 grid1_subtit4 grid1_foto4 grid1_foto3" "grid1_parr4 grid1_parr4 grid1_foto4 grid1_foto3";
-}
-@media screen and (max-width: 768px) {
-  .grid1 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(13, 1fr);
-    grid-template-areas: "grid1_tit grid1_tit" "grid1_foto1 grid1_foto2" "grid1_foto1 grid1_foto2" "grid1_subtit1 grid1_subtit1" "grid1parr1 grid1parr1" "grid1_subtit2 grid1_subti2" "grid1parr2 grid1parr2" "grid1_foto4 grid1_foto3" "grid1_foto4 grid1_foto3" "grid1_subtit3 grid1_subtit3" "grid1parr3 grid1parr3" "grid1_subtit4 grid1_subti4" "grid1parr4 grid1parr4";
-  }
-}
-.grid1 .fotosterap {
+.fotosterap {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
   height: 100%;
 }
-.grid1 .subtitulosterap {
+
+.subtitulosterap {
   text-align: center;
   text-decoration: underline;
   font-family: "HighSpirited";
   font-size: 80px;
   color: #9f86c0;
 }
-.grid1 .objetivo {
+
+.objetivo {
   text-align: center;
   font-family: "HighSpirited";
   font-size: 50px;
   color: #9f86c0;
   padding-inline: 2rem;
 }
-.grid1 .parrafos {
+
+.parrafos {
   text-align: justify;
   font-family: "CenturyGothic";
   padding-inline: 2rem;
 }
-.grid1_titulo {
-  background-image: url(/images/contacto.jpeg);
-  grid-area: grid1_tit;
+
+.grid1terap {
+  display: grid;
+  grid-template: "grid1_foto1 grid1_foto2 grid1_subtit1" "grid1_foto1 grid1_foto2 grid1_parr1" "grid1_foto1 grid1_foto2 grid1_subtit2" "grid1_foto1 grid1_foto2 grid1_parr2";
 }
-.grid1_titulo h1 {
+@media screen and (max-width: 768px) {
+  .grid1terap {
+    grid-template: "grid1_foto1 grid1_foto2" "grid1_subtit1 grid1_subtit1" "grid1_parr1 grid1_parr1" "grid1_subtit2 grid1_subtit2" "grid1_parr2 grid1_parr2";
+  }
+}
+.grid1terap_titulo h1 {
   text-align: center;
   font-family: "Inspiration";
   font-size: 100px;
   color: #9f86c0;
 }
-.grid1_foto1 {
+.grid1terap_foto1 {
   grid-area: grid1_foto1;
 }
-.grid1_foto2 {
+.grid1terap_foto2 {
   grid-area: grid1_foto2;
 }
-.grid1_subtit1 {
+.grid1terap_subtit1 {
   grid-area: grid1_subtit1;
 }
-.grid1_parr1 {
-  grid-area: grid1parr1;
+.grid1terap_parr1 {
+  grid-area: grid1_parr1;
 }
-.grid1_subtit2 {
-  grid-area: grid1subtitulo2;
+.grid1terap_subtit2 {
+  grid-area: grid1_subtit2;
 }
-.grid1_parr2 {
-  grid-area: grid1parr2;
-}
-.grid1_foto3 {
-  grid-area: grid1_foto3;
-}
-.grid1_foto4 {
-  grid-area: grid1_foto4;
-}
-.grid1_subtit3 {
-  grid-area: grid1_subtit3;
-}
-.grid1_parr3 {
-  grid-area: grid1_parr3;
-}
-.grid1_subtit4 {
-  grid-area: grid1_subtit4;
-}
-.grid1_parr4 {
-  grid-area: grid1_parr4;
+.grid1terap_parr2 {
+  grid-area: grid1_parr2;
 }
 
-.grid2 {
+.grid2terap {
+  background-color: rgb(253, 232, 250);
   display: grid;
-  grid-auto-columns: 1fr;
-  grid-template-columns: 1.3fr 1.4fr repeat(2, 1.3fr);
-  grid-template-rows: 0.4fr 1.2fr 0.4fr 0.5fr 0.4fr 1fr 0.4fr 0.3fr;
-  grid-template-areas: "grid2_foto1 grid2_foto2 grid2_subtit1 grid2_subtit1" "grid2_foto1 grid2_foto2 grid2_parr1 grid2_parr1" "grid2_foto1 grid2_foto2 grid2_subtit2 grid2_subtit2" "grid2_foto1 grid2_foto2 grid2_parr2 grid2_parr2" "grid2_subtit3 grid2_subtit3 grid2_foto4 grid2_foto3" "grid2_parr3 grid2_parr3 grid2_foto4 grid2_foto3" "grid2_subtit4 grid2_subtit4 grid2_foto4 grid2_foto3" "grid2_parr4 grid2_parr4 grid2_foto4 grid2_foto3";
+  grid-template: "grid2_subtit1 grid2_foto1 grid2_foto2 " "grid2_parr1 grid2_foto1 grid2_foto2" "grid2_subtit2 grid2_foto1 grid2_foto2" "grid2_parr2 grid2_foto1 grid2_foto2";
 }
-.grid2 .fotosterap {
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
-  height: 100%;
+@media screen and (max-width: 768px) {
+  .grid2terap {
+    grid-template: "grid2_foto1 grid2_foto2" "grid2_subtit1 grid2_subtit1" "grid2_parr1 grid2_parr1" "grid2_subtit2 grid2_subtit2" "grid2_parr2 grid2_parr2";
+  }
 }
-.grid2 .subtitulosterap {
-  text-align: center;
-  text-decoration: underline;
-  font-family: "HighSpirited";
-  font-size: 80px;
-  color: #9f86c0;
-}
-.grid2 .objetivo {
-  text-align: center;
-  font-family: "HighSpirited";
-  font-size: 50px;
-  color: #9f86c0;
-  padding-inline: 2rem;
-}
-.grid2 .parrafos {
-  text-align: justify;
-  font-family: "CenturyGothic";
-  padding-inline: 2rem;
-}
-.grid2 .grid2_foto1 {
+.grid2terap_foto1 {
   grid-area: grid2_foto1;
 }
-.grid2 .grid2_foto2 {
+.grid2terap_foto2 {
   grid-area: grid2_foto2;
 }
-.grid2 .grid2_subtit1 {
+.grid2terap_subtit1 {
   grid-area: grid2_subtit1;
 }
-.grid2 .grid2_parr1 {
+.grid2terap_parr1 {
   grid-area: grid2_parr1;
 }
-.grid2 .grid2_subtit2 {
+.grid2terap_subtit2 {
   grid-area: grid2_subtit2;
 }
-.grid2 .grid2_parr2 {
+.grid2terap_parr2 {
   grid-area: grid2_parr2;
-}
-.grid2 .grid2_foto3 {
-  grid-area: grid2_foto3;
-}
-.grid2 .grid2_foto4 {
-  grid-area: grid2_foto4;
-}
-.grid2 .grid2_subtit3 {
-  grid-area: grid2_subtit3;
-}
-.grid2 .grid2_parr3 {
-  grid-area: grid2_parr3;
-}
-.grid2 .grid2_subtit4 {
-  grid-area: grid2_subtit4;
-}
-.grid2 .grid2_parr4 {
-  grid-area: grid2_parr4;
 }
 
 .grid3 {
