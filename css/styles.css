@@ -134,6 +134,11 @@ main .carrusel .subtitulo:hover {
   transform: translateY(-5px);
   color: #c090ff;
 }
+@media screen and (max-width: 768px) {
+  main .carrusel .subtitulo {
+    font-size: 50px;
+  }
+}
 main .carrusel .descripcion {
   font-family: "CenturyGothic";
   color: rgba(255, 255, 255, 0.4588235294);
@@ -166,12 +171,17 @@ main .seccion2 .card {
 main .seccion2 .card__title {
   font-family: "Inspiration";
   color: #eacaff;
-  font-size: 3.5rem;
+  font-size: 60px;
   text-decoration: underline;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+@media screen and (max-width: 768px) {
+  main .seccion2 .card__title {
+    font-size: 45px;
+  }
 }
 main .seccion2 .card__text {
   font-family: "CenturyGothic";
@@ -180,75 +190,94 @@ main .seccion2 .card__text {
   color: white;
 }
 
-.parent {
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(7, 1fr);
-  height: 130vh;
-}
-.parent .subtitulosm {
-  font-family: "HighSpirited";
-  text-decoration: underline;
-  color: #9f86c0;
-  font-size: 70px;
-  text-align: start;
-  padding-left: 4rem;
-}
-.parent .parrafosm {
-  color: #231942;
-  font-family: "CenturyGothic";
-  font-size: 1.2rem;
-  text-align: start;
-  padding-inline: 4rem;
-}
-.parent .div1 {
-  grid-area: 1/1/2/9;
-}
-.parent .div1 h1 {
-  background-image: url(/images/contacto.jpeg);
-  height: 100%;
-  color: #5e548e;
-  font-family: "Inspiration";
-  font-size: 7rem;
+.qs_titulo {
   text-align: center;
-  padding-top: 1rem;
+  font-family: "Inspiration";
+  font-size: 100px;
+  color: #9f86c0;
 }
-.parent .div2 {
-  grid-area: 2/1/8/4;
-  justify-content: center;
-  align-items: center;
-}
-.parent .div2 img {
+
+.fotosqs {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
   height: 100%;
 }
-.parent .div3 {
-  grid-area: 2/4/3/9;
-}
-.parent .div3 h3 {
-  padding-top: 4rem;
-}
-.parent .div4 {
-  grid-area: 3/4/3/9;
-}
-.parent .div5 {
-  margin-top: 175px;
-  margin-bottom: 250px;
-  grid-area: 5/4/3/9;
-}
-.parent .div6 {
-  grid-area: 8/4/4/9;
-  padding-bottom: 8rem;
-  margin-top: 75px;
-}
-.parent .div6 h4 {
-  font-family: "HighSpirited";
-  color: #9f86c0;
-  font-size: 50px;
+
+.subtitulosqs {
   text-align: center;
-  padding-inline: 4rem;
+  text-decoration: underline;
+  font-family: "HighSpirited";
+  font-size: 70px;
+  color: #9f86c0;
+  padding-left: 2rem;
+}
+
+.subtitulosqsh4 {
+  text-align: start;
+  font-family: "HighSpirited";
+  font-size: 50px;
+  color: #9f86c0;
+  padding-inline: 2rem;
+}
+
+.parrafosqs {
+  text-align: justify;
+  font-family: "CenturyGothic";
+  padding-inline: 2rem;
+}
+
+.grid1quiensoy {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template: "foto subtit1 subtit1" "foto parr1 parr1" "foto subtit2 subtit2" "foto subtit3 subtit4" "foto parr2 parr3" "foto subtit5 subtit6" "foto parr4 parr5";
+}
+@media screen and (max-width: 768px) {
+  .grid1quiensoy {
+    grid-template: "subtit1 subtit1" "parr1 parr1" "subtit2 subtit2" "subtit3 subtit3" "parr2 parr2" "subtit4 subtit4" "parr3 parr3" "subtit5 subtit5" "parr4 parr4" "subtit6 subtit6" "parr5 parr5";
+  }
+}
+.grid1quiensoy_foto {
+  grid-area: foto;
+}
+@media screen and (max-width: 768px) {
+  .grid1quiensoy_foto {
+    position: absolute;
+    opacity: 0%;
+  }
+}
+.grid1quiensoy_subtit1 {
+  grid-area: subtit1;
+}
+.grid1quiensoy_subtit2 {
+  grid-area: subtit2;
+}
+.grid1quiensoy_subtit3 {
+  grid-area: subtit3;
+}
+.grid1quiensoy_subtit4 {
+  grid-area: subtit4;
+}
+.grid1quiensoy_subtit5 {
+  grid-area: subtit5;
+}
+.grid1quiensoy_subtit6 {
+  grid-area: subtit6;
+}
+.grid1quiensoy_parr1 {
+  grid-area: parr1;
+}
+.grid1quiensoy_parr2 {
+  grid-area: parr2;
+}
+.grid1quiensoy_parr3 {
+  grid-area: parr3;
+}
+.grid1quiensoy_parr4 {
+  grid-area: parr4;
+}
+.grid1quiensoy_parr5 {
+  grid-area: parr5;
 }
 
 .fotosterap {
@@ -482,12 +511,12 @@ main .seccion2 .card__text {
 }
 
 .fcontacto {
-  background-image: url(../../images/contacto.jpeg);
+  background-image: url(/images/contacto.jpeg);
   height: auto;
 }
 .fcontacto .contact_form {
   font-family: "CenturyGothic";
-  width: 480px;
+  width: 60%;
   height: auto;
   margin: 80px auto;
   border-radius: 10px;
@@ -507,13 +536,27 @@ main .seccion2 .card__text {
   font-size: 70px;
 }
 .fcontacto .contact_form .formulario__title2 {
+  padding-left: 4.5rem;
   font-size: 20px;
   color: #5e548e;
 }
+@media screen and (max-width: 768px) {
+  .fcontacto .contact_form .formulario__title2 {
+    padding-left: 20px;
+  }
+}
+.fcontacto .contact_form .formulario__form {
+  padding-left: 4.5rem;
+}
+@media screen and (max-width: 768px) {
+  .fcontacto .contact_form .formulario__form {
+    padding-left: 20px;
+  }
+}
 .fcontacto .contact_form .formulario__form input {
-  justify-content: start;
+  justify-content: center;
   background-color: #fbfbfb;
-  width: 440px;
+  width: 90%;
   height: 40px;
   border-radius: 5px;
   border-style: solid;
@@ -529,8 +572,8 @@ main .seccion2 .card__text {
 }
 .fcontacto .contact_form .formulario__form textarea {
   background-color: #fbfbfb;
-  width: 440px;
-  height: 150px;
+  width: 90%;
+  height: 200px;
   border-radius: 5px;
   border-style: solid;
   border-width: 1px;
@@ -548,23 +591,6 @@ main .seccion2 .card__text {
   display: block;
   float: center;
 }
-.fcontacto .contact_form .formulario__form button {
-  text-transform: uppercase;
-  background-color: #eacaff;
-  border-color: #9f86c0;
-  border-style: solid;
-  border-radius: 10px;
-  width: 440px;
-  cursor: pointer;
-}
-.fcontacto .contact_form .formulario__form button p {
-  color: #ffffff;
-  text-align: center;
-  align-items: center;
-  font-weight: bold;
-  font-size: 20px;
-  padding-top: 10px;
-}
 .fcontacto .contact_form .formulario__form span {
   color: #9f86c0;
 }
@@ -575,6 +601,41 @@ main .seccion2 .card__text {
 .fcontacto .contact_form .formulario__form p {
   font-size: 14px;
   color: #5e548e;
+}
+.fcontacto .contact_form .formulario__botones {
+  padding-bottom: 2rem;
+  padding-right: 4rem;
+  text-align: center;
+}
+.fcontacto .contact_form .formulario__botones button {
+  text-transform: uppercase;
+  background-color: #eacaff;
+  border-color: #9f86c0;
+  border-radius: 10px;
+  width: 150px;
+  cursor: pointer;
+}
+.fcontacto .contact_form .formulario__botones button:hover {
+  background-color: #5e548e;
+}
+@media screen and (max-width: 768px) {
+  .fcontacto .contact_form .formulario__botones button {
+    width: 80px;
+  }
+}
+.fcontacto .contact_form .formulario__botones button p {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding-top: 10px;
+}
+@media screen and (max-width: 768px) {
+  .fcontacto .contact_form .formulario__botones button p {
+    font-size: 0.8rem;
+  }
+}
+.fcontacto .contact_form .formulario__botones button p:hover {
+  color: #eacaff;
 }
 @keyframes RotateIn {
   0% {

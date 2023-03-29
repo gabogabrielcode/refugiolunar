@@ -1,10 +1,11 @@
-.fcontacto { 
-    background-image: url(../../images/contacto.jpeg);
+.fcontacto {
+    background-image: url(/images/contacto.jpeg);
     height: auto;
+
 
     .contact_form {
         font-family: $fontGothic;
-        width: 480px;
+        width: 60%;
         height: auto;
         margin: 80px auto;
         border-radius: 10px;
@@ -12,13 +13,14 @@
         padding-bottom: 10px;
         background-color: #fbfbfb;
         padding-left: 20px;
-    
+
+
         .formulario {
-    
+
             &__title1 {
                 font-family: $fontInspiration;
                 text-align: center;
-                color:  $segundoColor;
+                color: $segundoColor;
                 padding-right: 1.5rem;
 
                 h1 {
@@ -26,91 +28,120 @@
                     font-size: 70px;
                 }
             }
-    
+
             &__title2 {
+                padding-left: 4.5rem;
                 font-size: 20px;
                 color: $tercerColor;
+
+                @include mobile {
+                    padding-left: 20px
+                }
             }
-    
+
             &__form {
-    
+                padding-left: 4.5rem;
+
+                @include mobile {
+                    padding-left: 20px;
+                }
+
                 input {
-                    justify-content: start;
+                    justify-content: center;
                     background-color: #fbfbfb;
-                    width: 440px;
+                    width: 90%;
                     height: 40px;
                     border-radius: 5px;
                     border-style: solid;
                     border-width: 1px;
-                    border-color:  $primerColor;
+                    border-color: $primerColor;
                     margin-top: 10px;
                     padding-left: 10px;
                     margin-bottom: 20px;
-    
+
                     &:focus {
-                    outline:0;
-                    border: 1px solid $segundoColor;
+                        outline: 0;
+                        border: 1px solid $segundoColor;
                     }
                 }
-    
+
                 textarea {
                     background-color: #fbfbfb;
-                    width: 440px;
-                    height: 150px;
+                    width: 90%;
+                    height: 200px;
                     border-radius: 5px;
                     border-style: solid;
                     border-width: 1px;
-                    border-color:  $primerColor;
+                    border-color: $primerColor;
                     margin-top: 10px;
                     padding-left: 10px;
                     margin-bottom: 20px;
                     padding-top: 15px;
-    
+
                     &:focus {
-                        outline:0;
+                        outline: 0;
                         border: 1px solid $segundoColor;
                     }
                 }
-    
+
                 label {
                     display: block;
                     float: center;
                 }
-    
-                button {
-                    text-transform: uppercase;
-                    background-color: $primerColor;
-                    border-color: $segundoColor;
-                    border-style: solid;
-                    border-radius: 10px;
-                    width: 440px;
-                    cursor: pointer;
-    
-                    p {
-                        color: #ffffff;
-                        text-align: center;
-                        align-items: center;
-                        font-weight: bold;
-                        font-size: 20px;
-                        padding-top: 10px;
-                    }
-                }
-            
+
                 span {
-                   color: $segundoColor;
+                    color: $segundoColor;
                 }
-    
+
                 .aviso {
                     font-size: 13px;
                     color: $tercerColor;
                 }
-    
+
                 p {
-                    font-size: 14px; 
+                    font-size: 14px;
                     color: $tercerColor;
                 }
             }
         }
+
+        .formulario__botones {
+            padding-bottom: 2rem;
+            padding-right: 4rem;
+            text-align: center;
+
+            button {
+                text-transform: uppercase;
+                background-color: $primerColor;
+                border-color: $segundoColor;
+                border-radius: 10px;
+                width: 150px;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: $tercerColor;
+                }
+                
+                @include mobile {
+                    width: 80px;
+                }
+
+                p {
+                    color: #ffffff;
+                    font-weight: bold;
+                    font-size: 1.2rem;
+                    padding-top: 10px;
+
+                    @include mobile {
+                        font-size: 0.8rem;
+                    }
+
+                 &:hover {
+                    color: $primerColor;
+                 }
+                }
+            }
+
+        }
     }
 }
-

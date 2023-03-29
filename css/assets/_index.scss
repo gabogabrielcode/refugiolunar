@@ -19,6 +19,10 @@ main {
                 transform: translateY(-5px);
                 color: #c090ff;
             }
+
+            @include mobile {
+                font-size: 50px;
+            }
         }
 
         .descripcion {
@@ -55,12 +59,16 @@ main {
             &__title {
                 font-family: $fontInspiration;
                 color: $primerColor;
-                font-size: 3.5rem;
+                font-size: 60px;
                 text-decoration: underline;
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
                 align-items: center;
+
+                @include mobile {
+                    font-size: 45px;
+                }
             }
 
             &__text {

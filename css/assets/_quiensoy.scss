@@ -1,84 +1,121 @@
-.parent {
+.qs_titulo {
+    text-align: center;
+    font-family: $fontInspiration;
+    font-size: 100px;
+    color: $segundoColor
+}
+
+.fotosqs {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.subtitulosqs {
+    text-align: center;
+    text-decoration: underline;
+    font-family: $fontSpirited;
+    font-size: 70px;
+    color: $segundoColor;
+    padding-left: 2rem;
+}
+
+.subtitulosqsh4 {
+    text-align: start;
+    font-family: $fontSpirited;
+    font-size: 50px;
+    color: $segundoColor;
+    padding-inline: 2rem;
+}
+
+
+.parrafosqs {
+    text-align: justify;
+    font-family: $fontGothic;
+    padding-inline: 2rem;
+}
+    
+
+.grid1quiensoy {
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(7, 1fr);
-    height: 130vh;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template:
+    "foto subtit1 subtit1"
+    "foto parr1 parr1"
+    "foto subtit2 subtit2"
+    "foto subtit3 subtit4"
+    "foto parr2 parr3"
+    "foto subtit5 subtit6"
+    "foto parr4 parr5"
+    ;
 
-    .subtitulosm {
-        font-family: $fontSpirited;
-        text-decoration: underline;
-        color: $segundoColor;
-        font-size: 70px;
-        text-align: start;
-        padding-left: 4rem;
+    @include mobile {
+        grid-template:
+        "subtit1 subtit1"
+        "parr1 parr1"
+        "subtit2 subtit2"
+        "subtit3 subtit3"
+        "parr2 parr2"
+        "subtit4 subtit4"
+        "parr3 parr3"
+        "subtit5 subtit5"
+        "parr4 parr4"
+        "subtit6 subtit6"
+        "parr5 parr5";   
     }
 
-    .parrafosm {
-        color: $cuartoColor;
-        font-family: $fontGothic;
-        font-size: 1.2rem;
-        text-align: start;
-        padding-inline: 4rem
-    }
+    &_foto {
+        grid-area: foto;
 
-    .div1 {
-        grid-area: 1 / 1 / 2 / 9;
-
-        h1 {
-            background-image: url(/images/contacto.jpeg);
-            height: 100%;
-            color: $tercerColor;
-            font-family: $fontInspiration;
-            font-size: 7rem;
-            text-align: center;
-            padding-top: 1rem;
-        }
-
-    }
-
-    .div2 {
-
-        grid-area: 2 / 1 / 8 / 4;
-        justify-content: center;
-        align-items: center;
-
-        img {
-            object-fit: cover;
-            width: 100%;
-            height: 100%;
+        @include mobile {
+            position: absolute;
+            opacity: 0%;
         }
     }
 
-    .div3 {
-        grid-area: 2 / 4 / 3 / 9;
-
-        h3 {
-            padding-top: 4rem;
-        }
+    &_subtit1 {
+        grid-area: subtit1;
     }
 
-    .div4 {
-        grid-area: 3 / 4 / 3 / 9;
+    &_subtit2 {
+        grid-area: subtit2;
     }
 
-    .div5 {
-        margin-top: 175px;
-        margin-bottom: 250px;
-        grid-area: 5 / 4 / 3 / 9;
+    &_subtit3 {
+        grid-area: subtit3;
     }
 
-    .div6 {
-        grid-area: 8 / 4 / 4 / 9;
-        padding-bottom: 8rem;
-        margin-top: 75px;
-
-        h4 {
-            font-family: $fontSpirited;
-            color: $segundoColor;
-            font-size: 50px;
-            text-align: center;
-            padding-inline: 4rem;
-
-        }
+    &_subtit4 {
+        grid-area: subtit4;
     }
+
+    &_subtit5 {
+        grid-area: subtit5;
+    }
+
+    &_subtit6 {
+        grid-area: subtit6;
+    }
+
+    &_parr1 {
+        grid-area: parr1;
+    }
+
+    &_parr2 {
+        grid-area: parr2;
+    }
+
+    &_parr3 {
+        grid-area: parr3;
+    }
+
+    &_parr4 {
+        grid-area: parr4;
+    }
+
+    &_parr5 {
+        grid-area: parr5;
+    }
+    
+    
 }
