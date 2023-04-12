@@ -318,6 +318,9 @@ main .seccion2 .card__text {
     grid-template: "grid1_foto1 grid1_foto2" "grid1_subtit1 grid1_subtit1" "grid1_parr1 grid1_parr1" "grid1_subtit2 grid1_subtit2" "grid1_parr2 grid1_parr2";
   }
 }
+.grid1terap_titulo {
+  background-image: url(/images/contacto.jpeg);
+}
 .grid1terap_titulo h1 {
   text-align: center;
   font-family: "Inspiration";
